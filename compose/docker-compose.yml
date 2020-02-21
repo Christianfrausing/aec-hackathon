@@ -1,0 +1,56 @@
+version: '3.5'
+
+networks:
+    shared-network:
+        external: false
+  
+volumes:
+    fuseki-data:
+
+services:
+    traefik:
+        image: traefik:alpine
+        restart: always
+        command:
+          - --api
+          - --docker
+        ports:
+          - "80:80"
+        expose:
+          - 8080 # The Web UI (enabled by --api)
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+          - ./traefik.toml:/etc/traefik/traefik.toml
+        labels:
+          - traefik.enable=true
+          - traefik.frontend.rule=Host:traefik.${HOST}
+          - traefik.port=8080
+          - traefik.docker.network=shared-network
+        networks:
+          - shared-network
+    aec-app:
+        command: >
+            sh -c "cd /usr/src/app; node_modules/.bin/ng serve --host 0.0.0.0"
+        container_name: aec-app
+        depends_on:
+            - traefik
+        build:
+            context: ../app
+            dockerfile: Dockerfile
+        ports:
+            - 4200:4200
+        volumes:
+            - ../app/e2e:/usr/src/app/e2e
+            - ../app/src:/usr/src/app/src
+            - ../app/.editorconfig:/usr/src/app/.editorconfig
+            - ../app/angular.json:/usr/src/app/angular.json
+            - ../app/browserslist:/usr/src/app/browserslist
+            - ../app/tsconfig.json:/usr/src/app/tsconfig.json
+            - ../app/tslint.json:/usr/src/app/tslint.json
+        labels:
+            - traefik.enable=true
+            - traefik.frontend.rule=Host:${HOST}
+            - traefik.port=4200
+            - traefik.docker.network=shared-network
+        networks:
+            - shared-network
