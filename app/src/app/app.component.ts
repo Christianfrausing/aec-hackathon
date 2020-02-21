@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'app';
+
+  // Emitted when DXF parser has data
+  // (til Jonas)
+  onParseFinish(ev){
+    console.log(ev);
+  }
+
+
 }
