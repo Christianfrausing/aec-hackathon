@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 'ngx-file-drop';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DXFJSONParserService } from './dxf-json-parser.service';
@@ -19,6 +19,8 @@ export class DXFJSONParserComponent implements OnInit {
     public spaceLayer: string = "Space";
     public spaceTypeLayer: string = "SpaceType";
     public spaceNameLayer: string = "SpaceName";
+
+    @Output() parsedJSON = new EventEmitter<any>();
 
     constructor(
         private sanitizer: DomSanitizer,
@@ -74,7 +76,8 @@ export class DXFJSONParserComponent implements OnInit {
             // Parse file content to JSON
             const {json, svg} = await this._s.parseFile(fileContent, this.spaceLayer, this.spaceNameLayer, this.spaceTypeLayer);
 
-            // Parse further to csv
+            // Emit JSON
+            this.parsedJSON.emit(json);
 
             // Write JSON
             fileName = fileName.replace('dxf', 'json');
