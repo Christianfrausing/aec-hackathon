@@ -12,6 +12,7 @@ import { NgxFileDropModule } from 'ngx-file-drop';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 // APP COMPONENTS
@@ -30,6 +31,7 @@ import{ DXFJSONParserComponent } from './dxf-json-parser/dxf-json-parser.compone
     BrowserAnimationsModule,
     NgxFileDropModule,
     MatFormFieldModule,
+    MatToolbarModule,
     MatInputModule,
     MatListModule
   ],
