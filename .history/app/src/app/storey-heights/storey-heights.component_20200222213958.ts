@@ -44,7 +44,7 @@ export class StoreyHeightsComponent implements OnChanges {
       WHERE {
         <${this.buildingURI}> bot:hasStorey ?storey .
         ?storey nir:name ?name .
-        OPTIONAL{ ?storey nir:hasStoreyHeight ?height }
+        OPTIONAL{ ?storey nir:storeyHeight ?height }
       }`;
       this._fs.getQuery(q).subscribe(res => {
         this.storeyHeights = res.map(item => new StoreyHeight(item.name, item.storey, item.height));

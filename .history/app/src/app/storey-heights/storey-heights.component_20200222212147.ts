@@ -44,39 +44,22 @@ export class StoreyHeightsComponent implements OnChanges {
       WHERE {
         <${this.buildingURI}> bot:hasStorey ?storey .
         ?storey nir:name ?name .
-        OPTIONAL{ ?storey nir:hasStoreyHeight ?height }
+        OPTIONAL{ ?storey nir:storeyHeight ?height }
       }`;
       this._fs.getQuery(q).subscribe(res => {
         this.storeyHeights = res.map(item => new StoreyHeight(item.name, item.storey, item.height));
-        this.updateInitialHeights();
+
+        console.log(this.storeyHeights);
       }, err => console.log(err));
   }
 
   updateInitialHeights(){
-    this.initialHeights = JSON.parse(JSON.stringify(this.storeyHeights));
+    this.initialHeights = [...this.storeyHeights];
   }
 
-  saveHeight(storeyURI, height, initialHeight){
-    const q = `
-      DELETE{
-        ?storey nir:hasStoreyHeight ?h
-      }
-      INSERT{
-        ?storey nir:hasStoreyHeight "${height}"^^xsd:decimal
-      }
-      WHERE{
-        BIND(<${storeyURI}> AS ?storey)
-        OPTIONAL{
-          ?storey nir:hasStoreyHeight ?h
-        }
-      }`;
-      this._fs.updateQuery(q).subscribe(res => {
-        console.log(res);
-        this.updateInitialHeights();
-      }, err => {
-        const match = this.storeyHeights.find(item => item.storey == storeyURI);
-        match.height = initialHeight;
-      });
+  saveHeight(storeyURI, height){
+    console.log(storeyURI)
+    console.log(height)
   }
 
 }

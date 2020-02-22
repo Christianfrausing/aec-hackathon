@@ -2,12 +2,9 @@
 
     <mat-form-field *ngFor="let item of storeyHeights; index as i">
         <input matInput type="number" placeholder="{{item.name}} height" [(ngModel)]="item.height">
-        <span matSuffix>m</span>
-        <mat-icon matSuffix *ngIf="initialHeights[i].height != item.height" 
-            (click)="saveHeight(item.storey, item.height, initialHeights[i].height)" 
-            class="clickable">
-            save
-        </mat-icon>
+        <mat-icon matSuffix *ngIf="initialHeights[i].height != item.height" (click)="saveHeight(item.storey, item.height)">save</mat-icon>
+        {{initialHeights[i].height}}
+        {{item.i}}
     </mat-form-field>
 
 </div>
