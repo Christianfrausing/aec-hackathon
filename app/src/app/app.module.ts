@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // 3RD PARTY MODULES
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -41,6 +42,7 @@ import { SpaceLoaderComponent } from './space-loader/space-loader.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     NgxFileDropModule,
     MatFormFieldModule,
     MatToolbarModule,
