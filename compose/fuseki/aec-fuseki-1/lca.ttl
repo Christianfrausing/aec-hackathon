@@ -1,5 +1,5 @@
 
-prefix lca: <http://web-bim/lca-ontology#>
+prefix lca: <http://oekobaudat/lca-ontology#>
 <http://www.oekobaudat.de/OEKOBAU.DAT/resource/database/123> a lca:Database .
 <http://www.oekobaudat.de/OEKOBAU.DAT/resource/database/123> lca:hasId """123""" .
 <http://www.oekobaudat.de/OEKOBAU.DAT/resource/database/123> lca:hasName """Beta projekt""" .
