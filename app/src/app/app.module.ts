@@ -31,6 +31,7 @@ import { SpaceLoaderComponent } from './space-loader/space-loader.component';
   declarations: [
     AppComponent,
     DXFJSONParserComponent,
+    PathSelecterComponent,
     AssemblerMapperComponent,
     BuildingSelectorComponent,
     StoreySelectorComponent,
