@@ -3,9 +3,11 @@ version: '3.5'
 networks:
     shared-network:
         external: true
-  
+
 volumes:
-    fuseki-volume:
+    fuseki-volume-1:
+    fuseki-volume-2:
+    fuseki-volume-3:
 
 services:
     traefik:
@@ -58,21 +60,6 @@ services:
             - ../app/tsconfig.json:/usr/src/app/tsconfig.json
             - ../app/tsconfig.spec.json:/usr/src/app/tsconfig.spec.json
             - ../app/tslint.json:/usr/src/app/tslint.json
-    aec-fuseki:
-        container_name: aec_fuseki
-        image: stain/jena-fuseki
-        restart: on-failure
-        ports:
-            - 3030:3030
-        expose:
-            - 3030
-        environment:
-            - JVM_ARGS=-Xmx10g
-        volumes:
-            - fuseki-volume:/fuseki
-            - ./shiro.ini:/fuseki/shiro.ini
-        networks:
-            - shared-network
     aec-api:
         build: ../api
         command: >
@@ -97,3 +84,108 @@ services:
             - ../api/routes:/usr/src/app/routes
             - ../api/methods:/usr/src/app/methods
             - ../api/index.js:/usr/src/app/index.js
+    aec-fuseki-1:
+        command: >
+            sh -c
+            "
+            for db in /fuseki/dbs/*; do
+            file=$$(basename $$db);
+            name=$$(basename $${db%%.*});
+            if [ ! -d /fuseki/databases/_$$name ];
+            then
+                mkdir -p /fuseki/configuration
+                cp /fuseki/reasoning_config.ttl /fuseki/configuration/$$name.ttl
+                sed -i 's/<db>/'$$name'/g' /fuseki/configuration/$$name.ttl
+                mkdir -p /fuseki/databases/$$name
+                /jena-fuseki/tdbloader --loc=/fuseki/databases/_$$name /fuseki/dbs/$$file
+                cp -R /fuseki/databases/_$$name/* /fuseki/databases/$$name
+            fi;
+            done;
+            /jena-fuseki/fuseki-server
+            "
+        container_name: aec_fuseki_1
+        image: stain/jena-fuseki
+        restart: on-failure
+        ports:
+            - 3030:3030
+        expose:
+            - 3030
+        environment:
+            - JVM_ARGS=-Xmx10g
+        volumes:
+            - fuseki-volume-1:/fuseki
+            - ./shiro.ini:/fuseki/shiro.ini
+            - ./fuseki/aec-fuseki-1:/fuseki/dbs
+            - ./fuseki/reasoning_config.ttl:/fuseki/reasoning_config.ttl
+        networks:
+            - shared-network
+    aec-fuseki-2:
+        # command: >
+        #     sh -c
+        #     "
+        #     for db in /fuseki/dbs/*; do
+        #     file=$$(basename $$db);
+        #     name=$$(basename $${db%%.*});
+        #     if [ ! -d /fuseki/databases/_$$name ];
+        #     then
+        #         mkdir -p /fuseki/configuration
+        #         cp /fuseki/reasoning_config.ttl /fuseki/configuration/$$name.ttl
+        #         sed -i 's/<db>/'$$name'/g' /fuseki/configuration/$$name.ttl
+        #         mkdir -p /fuseki/databases/$$name
+        #         /jena-fuseki/tdbloader --loc=/fuseki/databases/_$$name /fuseki/dbs/$$file
+        #         cp -R /fuseki/databases/_$$name/* /fuseki/databases/$$name
+        #     fi;
+        #     done;
+        #     /jena-fuseki/fuseki-server
+        #     "
+        container_name: aec_fuseki_2
+        image: stain/jena-fuseki
+        restart: on-failure
+        ports:
+            - 3031:3030
+        expose:
+            - 3031
+        environment:
+            - JVM_ARGS=-Xmx10g
+        volumes:
+            - fuseki-volume-2:/fuseki
+            - ./shiro.ini:/fuseki/shiro.ini
+            # - ./fuseki/aec-fuseki-2:/fuseki/dbs
+            # - ./fuseki/reasoning_config.ttl:/fuseki/reasoning_config.ttl
+        networks:
+            - shared-network
+    aec-fuseki-3:
+        # command: >
+        #     sh -c
+        #     "
+        #     for db in /fuseki/dbs/*; do
+        #     file=$$(basename $$db);
+        #     name=$$(basename $${db%%.*});
+        #     if [ ! -d /fuseki/databases/_$$name ];
+        #     then
+        #         mkdir -p /fuseki/configuration
+        #         cp /fuseki/reasoning_config.ttl /fuseki/configuration/$$name.ttl
+        #         sed -i 's/<db>/'$$name'/g' /fuseki/configuration/$$name.ttl
+        #         mkdir -p /fuseki/databases/$$name
+        #         /jena-fuseki/tdbloader --loc=/fuseki/databases/_$$name /fuseki/dbs/$$file
+        #         cp -R /fuseki/databases/_$$name/* /fuseki/databases/$$name
+        #     fi;
+        #     done;
+        #     /jena-fuseki/fuseki-server
+        #     "
+        container_name: aec_fuseki_3
+        image: stain/jena-fuseki
+        restart: on-failure
+        ports:
+            - 3032:3030
+        expose:
+            - 3032
+        environment:
+            - JVM_ARGS=-Xmx10g
+        volumes:
+            - fuseki-volume-3:/fuseki
+            - ./shiro.ini:/fuseki/shiro.ini
+            # - ./fuseki/aec-fuseki-3:/fuseki/dbs
+            # - ./fuseki/reasoning_config.ttl:/fuseki/reasoning_config.ttl
+        networks:
+            - shared-network

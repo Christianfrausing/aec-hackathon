@@ -1,0 +1,20 @@
+
+<mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
+
+Select SPARQL endpoint
+<mat-form-field class="full-width">
+    <input matInput placeholder="SPARQL-endpoint" [(ngModel)]="endpoint">
+</mat-form-field>
+
+1. Select building
+<app-building-selector></app-building-selector>
+
+2. Select storey
+<app-storey-selector></app-storey-selector>
+
+3. Load spaces
+<app-space-loader (parsedJSON)="onParseFinish($event)"></app-space-loader>
+
+4. Generate walls/slabs
+
+<assembler-mapper></assembler-mapper>

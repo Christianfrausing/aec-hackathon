@@ -1,0 +1,14 @@
+<mat-accordion>
+
+    <!-- DXF IMPORT -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          DXF Upload
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <app-dxf-json-parser (parsedJSON)="onParseFinish($event)"></app-dxf-json-parser>
+
+    </mat-expansion-panel>
+</mat-accordion>

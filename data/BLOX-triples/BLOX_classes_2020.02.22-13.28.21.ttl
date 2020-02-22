@@ -1,0 +1,2507 @@
+@prefix bot: <https://w3id.org/bot#> .
+@prefix opm: <https://w3id.org/opm#> .
+@prefix cdt: <http://w3id.org/lindt/custom_datatypes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix fso: <https://w3id.org/fso#> .
+@prefix nir: <https://www.bim.niras.com/ontology#> .
+
+#CLASSES
+<http://web-bim/projects/BLOX/arch/walls/e3e052f9-0156-11d5-9301-0000863f27ad-0000014e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e3e052f9-0156-11d5-9301-0000863f27ad-0000014e>
+	rdfs:label "Curtain Wall"^^xsd:string ;
+	nir:id "334"^^xsd:integer ;
+	nir:guid "e3e052f9-0156-11d5-9301-0000863f27ad-0000014e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORJ9Z"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/e3e052f9-0156-11d5-9301-0000863f27ad-00000152> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/e3e052f9-0156-11d5-9301-0000863f27ad-00000152>
+	rdfs:label "Sloped Glazing"^^xsd:string ;
+	nir:id "338"^^xsd:integer ;
+	nir:guid "e3e052f9-0156-11d5-9301-0000863f27ad-00000152"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORJ9$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000310> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000310>
+	rdfs:label "Standard Timber-Wood Finish"^^xsd:string ;
+	nir:id "784"^^xsd:integer ;
+	nir:guid "458c0f21-01bb-11d5-9302-0000863f27ad-00000310"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORJ0z"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000311> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000311>
+	rdfs:label "Beam and Block 200mm"^^xsd:string ;
+	nir:id "785"^^xsd:integer ;
+	nir:guid "458c0f21-01bb-11d5-9302-0000863f27ad-00000311"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORJ0y"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000312> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/458c0f21-01bb-11d5-9302-0000863f27ad-00000312>
+	rdfs:label "Insitu Concrete 225mm"^^xsd:string ;
+	nir:id "786"^^xsd:integer ;
+	nir:guid "458c0f21-01bb-11d5-9302-0000863f27ad-00000312"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORJ0$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a8>
+	rdfs:label "Exterior Glazing"^^xsd:string ;
+	nir:id "29096"^^xsd:integer ;
+	nir:guid "dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORKA5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a9>
+	rdfs:label "Storefront"^^xsd:string ;
+	nir:id "29097"^^xsd:integer ;
+	nir:guid "dfb0bdff-3d6e-4361-ad6f-0e925923a0f6-000071a9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORKA4"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/stacked_walls/4d24d0d6-38f1-47b8-a376-b40c6432dad5-0000d509> a owl:Class .
+<http://web-bim/projects/BLOX/arch/stacked_walls/4d24d0d6-38f1-47b8-a376-b40c6432dad5-0000d509>
+	rdfs:label "STACKED - V81"^^xsd:string ;
+	nir:id "54537"^^xsd:integer ;
+	nir:guid "4d24d0d6-38f1-47b8-a376-b40c6432dad5-0000d509"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORUOa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/structural_foundations/5adccf95-7ef8-4f40-aa7c-dd3dcfd6d307-00015129> a owl:Class .
+<http://web-bim/projects/BLOX/arch/structural_foundations/5adccf95-7ef8-4f40-aa7c-dd3dcfd6d307-00015129>
+	rdfs:label "150mm Foundation Slab"^^xsd:string ;
+	nir:id "86313"^^xsd:integer ;
+	nir:guid "5adccf95-7ef8-4f40-aa7c-dd3dcfd6d307-00015129"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OR684"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/effed080-893e-40f3-a87f-5b6441efebb6-0001bb12> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/effed080-893e-40f3-a87f-5b6441efebb6-0001bb12>
+	rdfs:label "160mm Concrete With 50mm Metal Deck"^^xsd:string ;
+	nir:id "113426"^^xsd:integer ;
+	nir:guid "effed080-893e-40f3-a87f-5b6441efebb6-0001bb12"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OR8W$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/025eb64f-e345-4320-af2f-5cd5375cf9bc-0002209d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/025eb64f-e345-4320-af2f-5cd5375cf9bc-0002209d>
+	rdfs:label "3.A.3"^^xsd:string ;
+	nir:id "139421"^^xsd:integer ;
+	nir:guid "025eb64f-e345-4320-af2f-5cd5375cf9bc-0002209d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORnEm"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bdf20c87-5886-42bd-95ff-b85199a7fcdd-0002262e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bdf20c87-5886-42bd-95ff-b85199a7fcdd-0002262e>
+	rdfs:label "2.A.1"^^xsd:string ;
+	nir:id "140846"^^xsd:integer ;
+	nir:guid "bdf20c87-5886-42bd-95ff-b85199a7fcdd-0002262e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORnK3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dbefbbc3-c1d2-4e19-8bc7-81d3d2de467f-000246d7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dbefbbc3-c1d2-4e19-8bc7-81d3d2de467f-000246d7>
+	rdfs:label "2.A.2"^^xsd:string ;
+	nir:id "149207"^^xsd:integer ;
+	nir:guid "dbefbbc3-c1d2-4e19-8bc7-81d3d2de467f-000246d7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORtNw"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e180b69d-9c30-430d-b484-3fe24eda5320-00026763> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e180b69d-9c30-430d-b484-3fe24eda5320-00026763>
+	rdfs:label "4.A.1"^^xsd:string ;
+	nir:id "157539"^^xsd:integer ;
+	nir:guid "e180b69d-9c30-430d-b484-3fe24eda5320-00026763"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORrHE"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/279d5b8f-860e-41b2-b038-c02619ae25a6-00028141> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/279d5b8f-860e-41b2-b038-c02619ae25a6-00028141>
+	rdfs:label "HC265+75"^^xsd:string ;
+	nir:id "164161"^^xsd:integer ;
+	nir:guid "279d5b8f-860e-41b2-b038-c02619ae25a6-00028141"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORx9i"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/dee205e8-26b0-4b55-9bb9-784be9fbe2b7-0002a072> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/dee205e8-26b0-4b55-9bb9-784be9fbe2b7-0002a072>
+	rdfs:label "HC400+50"^^xsd:string ;
+	nir:id "172146"^^xsd:integer ;
+	nir:guid "dee205e8-26b0-4b55-9bb9-784be9fbe2b7-0002a072"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORvDV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c0f5e77e-b65f-402c-b628-736a48f16f07-0002b5b5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c0f5e77e-b65f-402c-b628-736a48f16f07-0002b5b5>
+	rdfs:label "HC400"^^xsd:string ;
+	nir:id "177589"^^xsd:integer ;
+	nir:guid "c0f5e77e-b65f-402c-b628-736a48f16f07-0002b5b5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORuQO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ec9e69e8-18da-4f3d-86ef-1db1ce363c50-00031566> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ec9e69e8-18da-4f3d-86ef-1db1ce363c50-00031566>
+	rdfs:label "HC265"^^xsd:string ;
+	nir:id "202086"^^xsd:integer ;
+	nir:guid "ec9e69e8-18da-4f3d-86ef-1db1ce363c50-00031566"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORYPB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/598f7102-8bcb-4595-ba21-69f8fd79bdd3-00032322> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/598f7102-8bcb-4595-ba21-69f8fd79bdd3-00032322>
+	rdfs:label "1"^^xsd:string ;
+	nir:id "205602"^^xsd:integer ;
+	nir:guid "598f7102-8bcb-4595-ba21-69f8fd79bdd3-00032322"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORX0F"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000354dd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000354dd>
+	rdfs:label "B300"^^xsd:string ;
+	nir:id "218333"^^xsd:integer ;
+	nir:guid "dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000354dd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORcVm"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000356d9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000356d9>
+	rdfs:label "B200"^^xsd:string ;
+	nir:id "218841"^^xsd:integer ;
+	nir:guid "dfdc0afa-6d67-4308-8011-d3ada3c11c1c-000356d9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORcNq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035a09> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035a09>
+	rdfs:label "B900"^^xsd:string ;
+	nir:id "219657"^^xsd:integer ;
+	nir:guid "a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035a09"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORcaa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035aaf> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035aaf>
+	rdfs:label "B500"^^xsd:string ;
+	nir:id "219823"^^xsd:integer ;
+	nir:guid "a7500de8-5666-4b2b-a9ee-d6fb414b35ad-00035aaf"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORcc2"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/f59a692c-33e4-450f-a765-ba72f617008c-0003a28e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/f59a692c-33e4-450f-a765-ba72f617008c-0003a28e>
+	rdfs:label "B650"^^xsd:string ;
+	nir:id "238222"^^xsd:integer ;
+	nir:guid "f59a692c-33e4-450f-a765-ba72f617008c-0003a28e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORf6Z"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ccecd263-269a-4bca-9511-58efa8be247e-0003ad8d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ccecd263-269a-4bca-9511-58efa8be247e-0003ad8d>
+	rdfs:label "B700"^^xsd:string ;
+	nir:id "241037"^^xsd:integer ;
+	nir:guid "ccecd263-269a-4bca-9511-58efa8be247e-0003ad8d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORfwW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c401> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c401>
+	rdfs:label "HC265+100"^^xsd:string ;
+	nir:id "246785"^^xsd:integer ;
+	nir:guid "d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c401"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORlSi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c5a9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c5a9>
+	rdfs:label "HC400+75"^^xsd:string ;
+	nir:id "247209"^^xsd:integer ;
+	nir:guid "d73b3e44-3ef8-4e6a-8e3e-b9a5bc6b68da-0003c5a9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ORlQ4"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/8bb5ae62-bcca-49fe-ac30-8035cc9de6bd-000407cb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/8bb5ae62-bcca-49fe-ac30-8035cc9de6bd-000407cb>
+	rdfs:label "M002"^^xsd:string ;
+	nir:id "264139"^^xsd:integer ;
+	nir:guid "8bb5ae62-bcca-49fe-ac30-8035cc9de6bd-000407cb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQJJc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e0e87e29-e6f7-4585-acae-3e08a49f240b-00041c2c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e0e87e29-e6f7-4585-acae-3e08a49f240b-00041c2c>
+	rdfs:label "B750"^^xsd:string ;
+	nir:id "269356"^^xsd:integer ;
+	nir:guid "e0e87e29-e6f7-4585-acae-3e08a49f240b-00041c2c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQIy1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/8b6beaf9-449a-4c49-8a7e-18f788eb6985-000430f6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/8b6beaf9-449a-4c49-8a7e-18f788eb6985-000430f6>
+	rdfs:label "FAC 3.C.2"^^xsd:string ;
+	nir:id "274678"^^xsd:integer ;
+	nir:guid "8b6beaf9-449a-4c49-8a7e-18f788eb6985-000430f6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQGFR"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/225eab4f-c981-43fc-8647-0007bcbb2c76-00046565> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/225eab4f-c981-43fc-8647-0007bcbb2c76-00046565>
+	rdfs:label "2.B"^^xsd:string ;
+	nir:id "288101"^^xsd:integer ;
+	nir:guid "225eab4f-c981-43fc-8647-0007bcbb2c76-00046565"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQLP8"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a2b73ea6-9b8c-4b76-ac96-842e4bebd41c-0004b160> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a2b73ea6-9b8c-4b76-ac96-842e4bebd41c-0004b160>
+	rdfs:label "FAC 3.C.1"^^xsd:string ;
+	nir:id "307552"^^xsd:integer ;
+	nir:guid "a2b73ea6-9b8c-4b76-ac96-842e4bebd41c-0004b160"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQO9D"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/52608ea8-317c-420f-af83-233191113244-0004ba86> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/52608ea8-317c-420f-af83-233191113244-0004ba86>
+	rdfs:label "3.B.1"^^xsd:string ;
+	nir:id "309894"^^xsd:integer ;
+	nir:guid "52608ea8-317c-420f-af83-233191113244-0004ba86"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQOch"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/34c31633-656e-4874-a538-cf307ff8465c-0004bb55> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/34c31633-656e-4874-a538-cf307ff8465c-0004bb55>
+	rdfs:label "3.B.2"^^xsd:string ;
+	nir:id "310101"^^xsd:integer ;
+	nir:guid "34c31633-656e-4874-a538-cf307ff8465c-0004bb55"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQOXu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/62c644e2-6060-4b86-8582-e9163556b7da-0004d90a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/62c644e2-6060-4b86-8582-e9163556b7da-0004d90a>
+	rdfs:label "3.A.1"^^xsd:string ;
+	nir:id "317706"^^xsd:integer ;
+	nir:guid "62c644e2-6060-4b86-8582-e9163556b7da-0004d90a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQUed"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e5d8636d-1ed4-441a-8354-d9c2099a6b09-00050ee6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e5d8636d-1ed4-441a-8354-d9c2099a6b09-00050ee6>
+	rdfs:label "2.D.3"^^xsd:string ;
+	nir:id "331494"^^xsd:integer ;
+	nir:guid "e5d8636d-1ed4-441a-8354-d9c2099a6b09-00050ee6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ3tB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/0a33198a-c2fc-438c-a5db-1a2737c4a41d-0005216b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/0a33198a-c2fc-438c-a5db-1a2737c4a41d-0005216b>
+	rdfs:label "2.C.2"^^xsd:string ;
+	nir:id "336235"^^xsd:integer ;
+	nir:guid "0a33198a-c2fc-438c-a5db-1a2737c4a41d-0005216b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ196"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053633> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053633>
+	rdfs:label "2.D.2"^^xsd:string ;
+	nir:id "341555"^^xsd:integer ;
+	nir:guid "9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053633"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ0KU"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053667> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053667>
+	rdfs:label "3.A.4"^^xsd:string ;
+	nir:id "341607"^^xsd:integer ;
+	nir:guid "9b822cd2-b2d8-4ea2-93ad-0b3701da11cc-00053667"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ0LA"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b5199fa5-0068-42e4-abb7-d67ce293cc0b-000546b8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b5199fa5-0068-42e4-abb7-d67ce293cc0b-000546b8>
+	rdfs:label "Insitu Concrete 750mm"^^xsd:string ;
+	nir:id "345784"^^xsd:integer ;
+	nir:guid "b5199fa5-0068-42e4-abb7-d67ce293cc0b-000546b8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ7ML"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/25c4f96c-fe3e-460a-9d08-fcc7e0f792ea-00055be2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/25c4f96c-fe3e-460a-9d08-fcc7e0f792ea-00055be2>
+	rdfs:label "B600"^^xsd:string ;
+	nir:id "351202"^^xsd:integer ;
+	nir:guid "25c4f96c-fe3e-460a-9d08-fcc7e0f792ea-00055be2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ6ZF"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/089d855f-7031-42af-b30e-c7a8f43d2c2b-00055f0f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/089d855f-7031-42af-b30e-c7a8f43d2c2b-00055f0f>
+	rdfs:label "Insitu Concrete 800mm"^^xsd:string ;
+	nir:id "352015"^^xsd:integer ;
+	nir:guid "089d855f-7031-42af-b30e-c7a8f43d2c2b-00055f0f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ6mY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/089d855f-7031-42af-b30e-c7a8f43d2c2b-00056328> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/089d855f-7031-42af-b30e-c7a8f43d2c2b-00056328>
+	rdfs:label "Generic LB2-2"^^xsd:string ;
+	nir:id "353064"^^xsd:integer ;
+	nir:guid "089d855f-7031-42af-b30e-c7a8f43d2c2b-00056328"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ505"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/258efcfa-06ed-4348-aeb1-e109202f155c-0005677a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/258efcfa-06ed-4348-aeb1-e109202f155c-0005677a>
+	rdfs:label "Generic LB2-1"^^xsd:string ;
+	nir:id "354170"^^xsd:integer ;
+	nir:guid "258efcfa-06ed-4348-aeb1-e109202f155c-0005677a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ5HN"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056b41> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056b41>
+	rdfs:label "Insitu Concrete 500mm"^^xsd:string ;
+	nir:id "355137"^^xsd:integer ;
+	nir:guid "c99d317d-3c45-4f0c-a24d-a513d2451a03-00056b41"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ5Xi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056e84> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056e84>
+	rdfs:label "GENERIC - B1.3"^^xsd:string ;
+	nir:id "355972"^^xsd:integer ;
+	nir:guid "c99d317d-3c45-4f0c-a24d-a513d2451a03-00056e84"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ5sf"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056ee0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c99d317d-3c45-4f0c-a24d-a513d2451a03-00056ee0>
+	rdfs:label "GENERIC - B1.8"^^xsd:string ;
+	nir:id "356064"^^xsd:integer ;
+	nir:guid "c99d317d-3c45-4f0c-a24d-a513d2451a03-00056ee0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ5tD"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057a40> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057a40>
+	rdfs:label "Insitu Concrete 300mm"^^xsd:string ;
+	nir:id "358976"^^xsd:integer ;
+	nir:guid "dfd037cc-2f39-4307-bebb-421fa0f9d232-00057a40"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ4bj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f6e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f6e>
+	rdfs:label "Insitu Concrete 200mm"^^xsd:string ;
+	nir:id "360302"^^xsd:integer ;
+	nir:guid "dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f6e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ4n3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f9b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f9b>
+	rdfs:label "Generic L0 - 515mm"^^xsd:string ;
+	nir:id "360347"^^xsd:integer ;
+	nir:guid "dfd037cc-2f39-4307-bebb-421fa0f9d232-00057f9b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ4os"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/bcc2d4b1-dc97-4cac-865a-cc6e25e2b48d-0005852c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/bcc2d4b1-dc97-4cac-865a-cc6e25e2b48d-0005852c>
+	rdfs:label "HC400+100"^^xsd:string ;
+	nir:id "361772"^^xsd:integer ;
+	nir:guid "bcc2d4b1-dc97-4cac-865a-cc6e25e2b48d-0005852c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQBO1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b2d5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b2d5>
+	rdfs:label "YM32"^^xsd:string ;
+	nir:id "373461"^^xsd:integer ;
+	nir:guid "328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b2d5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ87u"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b76c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b76c>
+	rdfs:label "YM21"^^xsd:string ;
+	nir:id "374636"^^xsd:integer ;
+	nir:guid "328192b5-66f0-4f93-8bca-ec2801ceef3d-0005b76c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQ8H1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/130a85e4-f7f6-4cce-b19b-1cb5740e0029-0005c799> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/130a85e4-f7f6-4cce-b19b-1cb5740e0029-0005c799>
+	rdfs:label "YM51"^^xsd:string ;
+	nir:id "378777"^^xsd:integer ;
+	nir:guid "130a85e4-f7f6-4cce-b19b-1cb5740e0029-0005c799"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQFIq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/74d47b3d-d4d4-43ca-b4c0-c99530c6c9e5-0005da56> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/74d47b3d-d4d4-43ca-b4c0-c99530c6c9e5-0005da56>
+	rdfs:label "V55"^^xsd:string ;
+	nir:id "383574"^^xsd:integer ;
+	nir:guid "74d47b3d-d4d4-43ca-b4c0-c99530c6c9e5-0005da56"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQEbx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d2aa2bd2-a0f0-4a9d-8a4c-019335bceb19-0005e647> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d2aa2bd2-a0f0-4a9d-8a4c-019335bceb19-0005e647>
+	rdfs:label "B1.10"^^xsd:string ;
+	nir:id "386631"^^xsd:integer ;
+	nir:guid "d2aa2bd2-a0f0-4a9d-8a4c-019335bceb19-0005e647"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQDLg"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/de174a15-b8c6-4e02-9971-aa9ef3b60ece-0006affc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/de174a15-b8c6-4e02-9971-aa9ef3b60ece-0006affc>
+	rdfs:label "Ground"^^xsd:string ;
+	nir:id "438268"^^xsd:integer ;
+	nir:guid "de174a15-b8c6-4e02-9971-aa9ef3b60ece-0006affc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQvpH"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/278b09c6-5753-4fee-b45e-2181d5c8d078-0007adb9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/278b09c6-5753-4fee-b45e-2181d5c8d078-0007adb9>
+	rdfs:label "K102"^^xsd:string ;
+	nir:id "503225"^^xsd:integer ;
+	nir:guid "278b09c6-5753-4fee-b45e-2181d5c8d078-0007adb9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQfwK"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/07199325-c998-42f5-9f07-d949fcfecb4e-0007b276> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/07199325-c998-42f5-9f07-d949fcfecb4e-0007b276>
+	rdfs:label "GENERIC - B1.4"^^xsd:string ;
+	nir:id "504438"^^xsd:integer ;
+	nir:guid "07199325-c998-42f5-9f07-d949fcfecb4e-0007b276"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQe5R"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007b2f6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007b2f6>
+	rdfs:label "K101"^^xsd:string ;
+	nir:id "504721"^^xsd:integer ;
+	nir:guid "4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007b2f6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQe2y"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007bbee> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007bbee>
+	rdfs:label "K201"^^xsd:string ;
+	nir:id "506862"^^xsd:integer ;
+	nir:guid "4b55e7e0-9d92-4366-96dc-a2d6bf1d6217-0007bbee"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQeZ3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/34eb6e2e-1d31-41d2-a4ef-57c6ffad657e-0007c2ec> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/34eb6e2e-1d31-41d2-a4ef-57c6ffad657e-0007c2ec>
+	rdfs:label "K301"^^xsd:string ;
+	nir:id "508652"^^xsd:integer ;
+	nir:guid "34eb6e2e-1d31-41d2-a4ef-57c6ffad657e-0007c2ec"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OQl71"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dc75d783-3400-428a-9279-580962e6448a-0008021e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dc75d783-3400-428a-9279-580962e6448a-0008021e>
+	rdfs:label "K403"^^xsd:string ;
+	nir:id "527558"^^xsd:integer ;
+	nir:guid "dc75d783-3400-428a-9279-580962e6448a-0008021e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPJ$h"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f023c827-43c8-4df2-85d7-601b6e97e036-000993b8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f023c827-43c8-4df2-85d7-601b6e97e036-000993b8>
+	rdfs:label "RF-60"^^xsd:string ;
+	nir:id "641942"^^xsd:integer ;
+	nir:guid "f023c827-43c8-4df2-85d7-601b6e97e036-000993b8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPFYx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/4d898394-4f77-47c0-872f-860bb99fed75-0009f8ed> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/4d898394-4f77-47c0-872f-860bb99fed75-0009f8ed>
+	rdfs:label "RF-010"^^xsd:string ;
+	nir:id "661970"^^xsd:integer ;
+	nir:guid "4d898394-4f77-47c0-872f-860bb99fed75-0009f8ed"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPoh$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/4d898394-4f77-47c0-872f-860bb99fed75-0009f9a8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/4d898394-4f77-47c0-872f-860bb99fed75-0009f9a8>
+	rdfs:label "GB-101_B"^^xsd:string ;
+	nir:id "661998"^^xsd:integer ;
+	nir:guid "4d898394-4f77-47c0-872f-860bb99fed75-0009f9a8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPoh3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ec7a7b0d-494d-4b29-8708-3b00f2c850cf-000a3100> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ec7a7b0d-494d-4b29-8708-3b00f2c850cf-000a3100>
+	rdfs:label "GB-103"^^xsd:string ;
+	nir:id "667904"^^xsd:integer ;
+	nir:guid "ec7a7b0d-494d-4b29-8708-3b00f2c850cf-000a3100"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPm8j"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/92d1c688-1cf3-4201-95c6-77d3c44c57cd-000a52c6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/92d1c688-1cf3-4201-95c6-77d3c44c57cd-000a52c6>
+	rdfs:label "TB-36 LVL4"^^xsd:string ;
+	nir:id "693460"^^xsd:integer ;
+	nir:guid "92d1c688-1cf3-4201-95c6-77d3c44c57cd-000a52c6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPwVv"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/0c97d509-c240-408b-8fef-a646ece0756c-000aa469> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/0c97d509-c240-408b-8fef-a646ece0756c-000aa469>
+	rdfs:label "RF-201"^^xsd:string ;
+	nir:id "697449"^^xsd:integer ;
+	nir:guid "0c97d509-c240-408b-8fef-a646ece0756c-000aa469"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPvT4"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/be94e881-475c-4c2c-b505-97f8fbd6da34-000aaa80> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/be94e881-475c-4c2c-b505-97f8fbd6da34-000aaa80>
+	rdfs:label "GB-030"^^xsd:string ;
+	nir:id "699008"^^xsd:integer ;
+	nir:guid "be94e881-475c-4c2c-b505-97f8fbd6da34-000aaa80"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPvcj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cf791f35-8c8c-43e9-a2b0-8689473e0205-000ab089> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cf791f35-8c8c-43e9-a2b0-8689473e0205-000ab089>
+	rdfs:label "RF-T22"^^xsd:string ;
+	nir:id "700553"^^xsd:integer ;
+	nir:guid "cf791f35-8c8c-43e9-a2b0-8689473e0205-000ab089"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPuEa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/0cfd3a59-c810-42df-9c57-aeafac5322f7-000ab503> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/0cfd3a59-c810-42df-9c57-aeafac5322f7-000ab503>
+	rdfs:label "RF-T23"^^xsd:string ;
+	nir:id "701699"^^xsd:integer ;
+	nir:guid "0cfd3a59-c810-42df-9c57-aeafac5322f7-000ab503"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPuOk"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/bf139a0a-51e7-4b8d-b651-11cdbd5840fd-000ab5cf> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/bf139a0a-51e7-4b8d-b651-11cdbd5840fd-000ab5cf>
+	rdfs:label "RF-T25"^^xsd:string ;
+	nir:id "701903"^^xsd:integer ;
+	nir:guid "bf139a0a-51e7-4b8d-b651-11cdbd5840fd-000ab5cf"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPuRY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a1cc2f44-49e1-4b5c-9353-962fbca1114a-000aba51> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a1cc2f44-49e1-4b5c-9353-962fbca1114a-000aba51>
+	rdfs:label "V22"^^xsd:string ;
+	nir:id "703057"^^xsd:integer ;
+	nir:guid "a1cc2f44-49e1-4b5c-9353-962fbca1114a-000aba51"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPuby"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bfcd9a26-26f8-44cf-ba77-d9b8da03d345-000a98de> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bfcd9a26-26f8-44cf-ba77-d9b8da03d345-000a98de>
+	rdfs:label "_CL-35"^^xsd:string ;
+	nir:id "712173"^^xsd:integer ;
+	nir:guid "bfcd9a26-26f8-44cf-ba77-d9b8da03d345-000a98de"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OP_x0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/611b466f-0a22-479a-b0aa-b3fbdd514fac-000b21a8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/611b466f-0a22-479a-b0aa-b3fbdd514fac-000b21a8>
+	rdfs:label "GB-211"^^xsd:string ;
+	nir:id "729512"^^xsd:integer ;
+	nir:guid "611b466f-0a22-479a-b0aa-b3fbdd514fac-000b21a8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPXA5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bca> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bca>
+	rdfs:label "GB-201"^^xsd:string ;
+	nir:id "732106"^^xsd:integer ;
+	nir:guid "f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bca"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPXZd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bf7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bf7>
+	rdfs:label "GB-301"^^xsd:string ;
+	nir:id "732151"^^xsd:integer ;
+	nir:guid "f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2bf7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPXZQ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2c26> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2c26>
+	rdfs:label "GB-010"^^xsd:string ;
+	nir:id "732198"^^xsd:integer ;
+	nir:guid "f6c5007a-85e7-4d2b-a344-7b858964bc61-000b2c26"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPXyB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/db85e872-53da-42df-8acf-d03c0fb5b9dc-000b4549> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/db85e872-53da-42df-8acf-d03c0fb5b9dc-000b4549>
+	rdfs:label "GB-032"^^xsd:string ;
+	nir:id "738633"^^xsd:integer ;
+	nir:guid "db85e872-53da-42df-8acf-d03c0fb5b9dc-000b4549"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPdPa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b4892> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b4892>
+	rdfs:label "RF-034"^^xsd:string ;
+	nir:id "739474"^^xsd:integer ;
+	nir:guid "6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b4892"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPdk$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b491f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b491f>
+	rdfs:label "RF-001"^^xsd:string ;
+	nir:id "739615"^^xsd:integer ;
+	nir:guid "6c0fb4fa-b11d-4356-8731-97dbd2378a6b-000b491f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPdeo"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4b1c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4b1c>
+	rdfs:label "RF-T12"^^xsd:string ;
+	nir:id "740124"^^xsd:integer ;
+	nir:guid "d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4b1c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPdWn"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4bf9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4bf9>
+	rdfs:label "G51"^^xsd:string ;
+	nir:id "740345"^^xsd:integer ;
+	nir:guid "d5aa06fe-f235-4ecb-afa7-9df859d59f4c-000b4bf9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPdZK"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b55d9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b55d9>
+	rdfs:label "G11"^^xsd:string ;
+	nir:id "742873"^^xsd:integer ;
+	nir:guid "d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b55d9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPcRq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b574c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b574c>
+	rdfs:label "G41"^^xsd:string ;
+	nir:id "743244"^^xsd:integer ;
+	nir:guid "d3ba9dc8-3592-4639-85a1-3b533d0caaea-000b574c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPcHX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fa8d440a-e3f3-4e6f-a4e2-1fdbbefb4ee7-000b6f13> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fa8d440a-e3f3-4e6f-a4e2-1fdbbefb4ee7-000b6f13>
+	rdfs:label "_CL-37"^^xsd:string ;
+	nir:id "749331"^^xsd:integer ;
+	nir:guid "fa8d440a-e3f3-4e6f-a4e2-1fdbbefb4ee7-000b6f13"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPbm_"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7559> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7559>
+	rdfs:label "G05"^^xsd:string ;
+	nir:id "750937"^^xsd:integer ;
+	nir:guid "6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7559"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPaPq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7734> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7734>
+	rdfs:label "G01"^^xsd:string ;
+	nir:id "751412"^^xsd:integer ;
+	nir:guid "6ba85d1e-0ae7-4bb9-a785-d9ac1cfcb27b-000b7734"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPaGP"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/30410850-b146-430b-a68a-e4c50b0b88ee-000ba6a3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/30410850-b146-430b-a68a-e4c50b0b88ee-000ba6a3>
+	rdfs:label "G21"^^xsd:string ;
+	nir:id "763555"^^xsd:integer ;
+	nir:guid "30410850-b146-430b-a68a-e4c50b0b88ee-000ba6a3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPfME"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/30410850-b146-430b-a68a-e4c50b0b88ee-000bacf9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/30410850-b146-430b-a68a-e4c50b0b88ee-000bacf9>
+	rdfs:label "G13"^^xsd:string ;
+	nir:id "765177"^^xsd:integer ;
+	nir:guid "30410850-b146-430b-a68a-e4c50b0b88ee-000bacf9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPf$K"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d0e56c2e-c7e9-42cc-bf15-d4498aef61a7-000bc3b2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d0e56c2e-c7e9-42cc-bf15-d4498aef61a7-000bc3b2>
+	rdfs:label "K303"^^xsd:string ;
+	nir:id "770994"^^xsd:integer ;
+	nir:guid "d0e56c2e-c7e9-42cc-bf15-d4498aef61a7-000bc3b2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OPl2V"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/fa383ddb-f76f-4f3e-ae13-d0d1a8e153fa-000bf1c8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/fa383ddb-f76f-4f3e-ae13-d0d1a8e153fa-000bf1c8>
+	rdfs:label "GB-102"^^xsd:string ;
+	nir:id "800128"^^xsd:integer ;
+	nir:guid "fa383ddb-f76f-4f3e-ae13-d0d1a8e153fa-000bf1c8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOGQj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/951a99e4-7616-4dae-9734-7edf51ccee74-000c53e0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/951a99e4-7616-4dae-9734-7edf51ccee74-000c53e0>
+	rdfs:label "V43"^^xsd:string ;
+	nir:id "807904"^^xsd:integer ;
+	nir:guid "951a99e4-7616-4dae-9734-7edf51ccee74-000c53e0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOM3D"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5b0a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5b0a>
+	rdfs:label "GB-311"^^xsd:string ;
+	nir:id "812199"^^xsd:integer ;
+	nir:guid "a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5b0a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOLUA"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5bfa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5bfa>
+	rdfs:label "RF-35"^^xsd:string ;
+	nir:id "812209"^^xsd:integer ;
+	nir:guid "a6a991de-97a3-4dff-8f86-3ce47b06582f-000c5bfa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOLUS"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/af01e736-7809-4727-b2e2-04c4ca07881a-000c6959> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/af01e736-7809-4727-b2e2-04c4ca07881a-000c6959>
+	rdfs:label "K100"^^xsd:string ;
+	nir:id "813401"^^xsd:integer ;
+	nir:guid "af01e736-7809-4727-b2e2-04c4ca07881a-000c6959"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOLfq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ed4425bf-928d-46d2-8e9a-181e0a3b702e-000c6658> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ed4425bf-928d-46d2-8e9a-181e0a3b702e-000c6658>
+	rdfs:label "RF-42"^^xsd:string ;
+	nir:id "826832"^^xsd:integer ;
+	nir:guid "ed4425bf-928d-46d2-8e9a-181e0a3b702e-000c6658"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOQxz"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f1162c5a-8a26-4e5c-8c8c-2a7e3a287e10-000cb35e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f1162c5a-8a26-4e5c-8c8c-2a7e3a287e10-000cb35e>
+	rdfs:label "G17"^^xsd:string ;
+	nir:id "832350"^^xsd:integer ;
+	nir:guid "f1162c5a-8a26-4e5c-8c8c-2a7e3a287e10-000cb35e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOO1p"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/669ea0b4-5544-4eea-ad8e-d939281d71f2-000cabc1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/669ea0b4-5544-4eea-ad8e-d939281d71f2-000cabc1>
+	rdfs:label "RF-41"^^xsd:string ;
+	nir:id "842608"^^xsd:integer ;
+	nir:guid "669ea0b4-5544-4eea-ad8e-d939281d71f2-000cabc1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOUXT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/910a4c3c-d15d-4065-85b6-09bf0375e4ae-000cadc0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/910a4c3c-d15d-4065-85b6-09bf0375e4ae-000cadc0>
+	rdfs:label "G32"^^xsd:string ;
+	nir:id "842625"^^xsd:integer ;
+	nir:guid "910a4c3c-d15d-4065-85b6-09bf0375e4ae-000cadc0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOUYi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/1e0cc52d-0dff-4084-8bef-198d3e80aa65-000ce088> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/1e0cc52d-0dff-4084-8bef-198d3e80aa65-000ce088>
+	rdfs:label "G22"^^xsd:string ;
+	nir:id "843912"^^xsd:integer ;
+	nir:guid "1e0cc52d-0dff-4084-8bef-198d3e80aa65-000ce088"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOTEb"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/87c1b87b-b832-4f3d-9715-e8fb61cbbcfe-000d1ed1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/87c1b87b-b832-4f3d-9715-e8fb61cbbcfe-000d1ed1>
+	rdfs:label "RF-31"^^xsd:string ;
+	nir:id "859857"^^xsd:integer ;
+	nir:guid "87c1b87b-b832-4f3d-9715-e8fb61cbbcfe-000d1ed1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OO2ty"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/0b375a98-04ae-4a81-a511-76c68e13b523-000d955f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/0b375a98-04ae-4a81-a511-76c68e13b523-000d955f>
+	rdfs:label "RF-T28"^^xsd:string ;
+	nir:id "897134"^^xsd:integer ;
+	nir:guid "0b375a98-04ae-4a81-a511-76c68e13b523-000d955f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OO8D3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c920602d-176c-4298-8db8-d761494a7741-000db53c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c920602d-176c-4298-8db8-d761494a7741-000db53c>
+	rdfs:label "RF-T33"^^xsd:string ;
+	nir:id "925324"^^xsd:integer ;
+	nir:guid "c920602d-176c-4298-8db8-d761494a7741-000db53c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOosX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c920602d-176c-4298-8db8-d761494a7741-000dbbfc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c920602d-176c-4298-8db8-d761494a7741-000dbbfc>
+	rdfs:label "RF-T30"^^xsd:string ;
+	nir:id "925387"^^xsd:integer ;
+	nir:guid "c920602d-176c-4298-8db8-d761494a7741-000dbbfc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOotc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/15fd2c54-7535-458c-8e89-6e4266104980-000e3cd2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/15fd2c54-7535-458c-8e89-6e4266104980-000e3cd2>
+	rdfs:label "V41"^^xsd:string ;
+	nir:id "933074"^^xsd:integer ;
+	nir:guid "15fd2c54-7535-458c-8e89-6e4266104980-000e3cd2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOm$$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d5c49630-6855-4383-b01a-2c20bfd7ff63-000e24b2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d5c49630-6855-4383-b01a-2c20bfd7ff63-000e24b2>
+	rdfs:label "RF-T27"^^xsd:string ;
+	nir:id "935281"^^xsd:integer ;
+	nir:guid "d5c49630-6855-4383-b01a-2c20bfd7ff63-000e24b2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOtPS"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d5c49630-6855-4383-b01a-2c20bfd7ff63-000e2846> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d5c49630-6855-4383-b01a-2c20bfd7ff63-000e2846>
+	rdfs:label "RF-T24"^^xsd:string ;
+	nir:id "935323"^^xsd:integer ;
+	nir:guid "d5c49630-6855-4383-b01a-2c20bfd7ff63-000e2846"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOtQs"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/16923434-ab30-4278-8da6-38b458d535c1-000eec4f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/16923434-ab30-4278-8da6-38b458d535c1-000eec4f>
+	rdfs:label "RF-T32"^^xsd:string ;
+	nir:id "979621"^^xsd:integer ;
+	nir:guid "16923434-ab30-4278-8da6-38b458d535c1-000eec4f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOy68"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/8612e578-2098-4b75-b60f-e3221f6e768e-000f2894> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/8612e578-2098-4b75-b60f-e3221f6e768e-000f2894>
+	rdfs:label "RF-T26"^^xsd:string ;
+	nir:id "993428"^^xsd:integer ;
+	nir:guid "8612e578-2098-4b75-b60f-e3221f6e768e-000f2894"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOXkv"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/f3587829-3c28-4af6-b911-617d2927b7ae-000f80a0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/f3587829-3c28-4af6-b911-617d2927b7ae-000f80a0>
+	rdfs:label "K104"^^xsd:string ;
+	nir:id "1015968"^^xsd:integer ;
+	nir:guid "f3587829-3c28-4af6-b911-617d2927b7ae-000f80a0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOhED"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/8cdd2b33-33b7-46e6-9360-da439e1bd96b-000fb2a3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/8cdd2b33-33b7-46e6-9360-da439e1bd96b-000fb2a3>
+	rdfs:label "RF-040"^^xsd:string ;
+	nir:id "1028771"^^xsd:integer ;
+	nir:guid "8cdd2b33-33b7-46e6-9360-da439e1bd96b-000fb2a3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOe6E"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/1a217725-f86a-44d7-848f-20a87101e3d4-000fd022> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/1a217725-f86a-44d7-848f-20a87101e3d4-000fd022>
+	rdfs:label "K202"^^xsd:string ;
+	nir:id "1036322"^^xsd:integer ;
+	nir:guid "1a217725-f86a-44d7-848f-20a87101e3d4-000fd022"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkCF"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/dafa2508-5053-4cdb-a48d-9305f8bfc95c-000fd88b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/dafa2508-5053-4cdb-a48d-9305f8bfc95c-000fd88b>
+	rdfs:label "K302"^^xsd:string ;
+	nir:id "1038475"^^xsd:integer ;
+	nir:guid "dafa2508-5053-4cdb-a48d-9305f8bfc95c-000fd88b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkkc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/84a95b1a-6fb2-40e2-9858-d3d47dc7e914-000fa7a4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/84a95b1a-6fb2-40e2-9858-d3d47dc7e914-000fa7a4>
+	rdfs:label "GB-032_D"^^xsd:string ;
+	nir:id "1038927"^^xsd:integer ;
+	nir:guid "84a95b1a-6fb2-40e2-9858-d3d47dc7e914-000fa7a4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkbY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/65df6123-b4f1-4173-a903-339f9da2273a-000fad92> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/65df6123-b4f1-4173-a903-339f9da2273a-000fad92>
+	rdfs:label "RF-38"^^xsd:string ;
+	nir:id "1039019"^^xsd:integer ;
+	nir:guid "65df6123-b4f1-4173-a903-339f9da2273a-000fad92"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkc6"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d8d04536-b182-42b9-8b96-0a35e2ae623a-000faf76> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d8d04536-b182-42b9-8b96-0a35e2ae623a-000faf76>
+	rdfs:label "RF-T70"^^xsd:string ;
+	nir:id "1039037"^^xsd:integer ;
+	nir:guid "d8d04536-b182-42b9-8b96-0a35e2ae623a-000faf76"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkcG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d8d04536-b182-42b9-8b96-0a35e2ae623a-000fb04a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d8d04536-b182-42b9-8b96-0a35e2ae623a-000fb04a>
+	rdfs:label "RF-T13"^^xsd:string ;
+	nir:id "1039060"^^xsd:integer ;
+	nir:guid "d8d04536-b182-42b9-8b96-0a35e2ae623a-000fb04a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOkdv"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/642d8b0e-7819-4569-a569-ccc6d1920745-000ffdab> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/642d8b0e-7819-4569-a569-ccc6d1920745-000ffdab>
+	rdfs:label "K103"^^xsd:string ;
+	nir:id "1047979"^^xsd:integer ;
+	nir:guid "642d8b0e-7819-4569-a569-ccc6d1920745-000ffdab"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OOiw6"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/dc4cc524-fc41-4ce3-9152-e7588036d7c0-001005f5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/dc4cc524-fc41-4ce3-9152-e7588036d7c0-001005f5>
+	rdfs:label "GB-033"^^xsd:string ;
+	nir:id "1050101"^^xsd:integer ;
+	nir:guid "dc4cc524-fc41-4ce3-9152-e7588036d7c0-001005f5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVJRO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bbb7de92-f66e-4458-912a-a40f72c73587-001004a0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bbb7de92-f66e-4458-912a-a40f72c73587-001004a0>
+	rdfs:label "K203"^^xsd:string ;
+	nir:id "1067532"^^xsd:integer ;
+	nir:guid "bbb7de92-f66e-4458-912a-a40f72c73587-001004a0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVNaX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bbb7de92-f66e-4458-912a-a40f72c73587-00100579> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bbb7de92-f66e-4458-912a-a40f72c73587-00100579>
+	rdfs:label "S100"^^xsd:string ;
+	nir:id "1067535"^^xsd:integer ;
+	nir:guid "bbb7de92-f66e-4458-912a-a40f72c73587-00100579"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVNaY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/4234f297-c76f-492c-8c6c-79db8d130f46-00105676> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/4234f297-c76f-492c-8c6c-79db8d130f46-00105676>
+	rdfs:label "G02"^^xsd:string ;
+	nir:id "1070710"^^xsd:integer ;
+	nir:guid "4234f297-c76f-492c-8c6c-79db8d130f46-00105676"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVMLR"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/cafbe9bd-bd22-4ba6-b994-ead5a8e23d3f-00108096> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/cafbe9bd-bd22-4ba6-b994-ead5a8e23d3f-00108096>
+	rdfs:label "G1.1.3"^^xsd:string ;
+	nir:id "1100946"^^xsd:integer ;
+	nir:guid "cafbe9bd-bd22-4ba6-b994-ead5a8e23d3f-00108096"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVV_$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c9604f1d-208d-49f4-a0e2-a2024b1b9539-0010dddb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c9604f1d-208d-49f4-a0e2-a2024b1b9539-0010dddb>
+	rdfs:label "G53"^^xsd:string ;
+	nir:id "1105371"^^xsd:integer ;
+	nir:guid "c9604f1d-208d-49f4-a0e2-a2024b1b9539-0010dddb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVUxs"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/05069a3d-1d66-44ca-9162-e34c67782ec3-00110775> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/05069a3d-1d66-44ca-9162-e34c67782ec3-00110775>
+	rdfs:label "K002"^^xsd:string ;
+	nir:id "1116021"^^xsd:integer ;
+	nir:guid "05069a3d-1d66-44ca-9162-e34c67782ec3-00110775"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV3HO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5a528a37-b557-4c5d-a199-7818668a5e0c-00110f3a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5a528a37-b557-4c5d-a199-7818668a5e0c-00110f3a>
+	rdfs:label "M001"^^xsd:string ;
+	nir:id "1118010"^^xsd:integer ;
+	nir:guid "5a528a37-b557-4c5d-a199-7818668a5e0c-00110f3a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV3mN"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5a528a37-b557-4c5d-a199-7818668a5e0c-001110ca> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5a528a37-b557-4c5d-a199-7818668a5e0c-001110ca>
+	rdfs:label "V50"^^xsd:string ;
+	nir:id "1118410"^^xsd:integer ;
+	nir:guid "5a528a37-b557-4c5d-a199-7818668a5e0c-001110ca"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV2Fd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/adb43db6-7678-49e1-83e7-4e320b548ad0-00112981> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/adb43db6-7678-49e1-83e7-4e320b548ad0-00112981>
+	rdfs:label "S100-Void"^^xsd:string ;
+	nir:id "1124737"^^xsd:integer ;
+	nir:guid "adb43db6-7678-49e1-83e7-4e320b548ad0-00112981"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV1gi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fecafae9-b728-408c-8e71-c5f8f3d5f4b4-0011348b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fecafae9-b728-408c-8e71-c5f8f3d5f4b4-0011348b>
+	rdfs:label "S100-top"^^xsd:string ;
+	nir:id "1127563"^^xsd:integer ;
+	nir:guid "fecafae9-b728-408c-8e71-c5f8f3d5f4b4-0011348b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV0Uc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fecafae9-b728-408c-8e71-c5f8f3d5f4b4-00113675> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fecafae9-b728-408c-8e71-c5f8f3d5f4b4-00113675>
+	rdfs:label "S100-Bttm"^^xsd:string ;
+	nir:id "1128053"^^xsd:integer ;
+	nir:guid "fecafae9-b728-408c-8e71-c5f8f3d5f4b4-00113675"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV0LO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/39f96d44-2ca3-49c3-b948-8b565936cebf-00113db3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/39f96d44-2ca3-49c3-b948-8b565936cebf-00113db3>
+	rdfs:label "G06"^^xsd:string ;
+	nir:id "1130144"^^xsd:integer ;
+	nir:guid "39f96d44-2ca3-49c3-b948-8b565936cebf-00113db3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV0sD"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2ae31741-5634-4014-966c-abb5ae5affc3-001154b9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2ae31741-5634-4014-966c-abb5ae5affc3-001154b9>
+	rdfs:label "M003"^^xsd:string ;
+	nir:id "1135801"^^xsd:integer ;
+	nir:guid "2ae31741-5634-4014-966c-abb5ae5affc3-001154b9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV6UK"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/0d44b04b-0989-46f2-9ab4-121993af61d7-0011713b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/0d44b04b-0989-46f2-9ab4-121993af61d7-0011713b>
+	rdfs:label "G1.2.2"^^xsd:string ;
+	nir:id "1143099"^^xsd:integer ;
+	nir:guid "0d44b04b-0989-46f2-9ab4-121993af61d7-0011713b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV48M"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a7910696-b258-4ed9-a4e7-bbeca7bb13c6-00118df5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a7910696-b258-4ed9-a4e7-bbeca7bb13c6-00118df5>
+	rdfs:label "G1.2.1"^^xsd:string ;
+	nir:id "1150453"^^xsd:integer ;
+	nir:guid "a7910696-b258-4ed9-a4e7-bbeca7bb13c6-00118df5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVBxO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6267acc9-6c6a-4506-84fe-ab1fda913187-0011a596> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6267acc9-6c6a-4506-84fe-ab1fda913187-0011a596>
+	rdfs:label "YM41"^^xsd:string ;
+	nir:id "1156502"^^xsd:integer ;
+	nir:guid "6267acc9-6c6a-4506-84fe-ab1fda913187-0011a596"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OV9Qx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/stacked_walls/44eaa59f-92a7-4bc8-9af4-6f9454cc9002-0011ff35> a owl:Class .
+<http://web-bim/projects/BLOX/arch/stacked_walls/44eaa59f-92a7-4bc8-9af4-6f9454cc9002-0011ff35>
+	rdfs:label "STACKED - S200"^^xsd:string ;
+	nir:id "1184189"^^xsd:integer ;
+	nir:guid "44eaa59f-92a7-4bc8-9af4-6f9454cc9002-0011ff35"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVoAG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/222adcb3-d08f-472c-afd3-df964da4084f-001227d7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/222adcb3-d08f-472c-afd3-df964da4084f-001227d7>
+	rdfs:label "G52"^^xsd:string ;
+	nir:id "1195397"^^xsd:integer ;
+	nir:guid "222adcb3-d08f-472c-afd3-df964da4084f-001227d7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVmwe"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/6ca3c0e7-982b-401f-9a64-3a660c0b70fb-00122ce0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/6ca3c0e7-982b-401f-9a64-3a660c0b70fb-00122ce0>
+	rdfs:label "GB-223"^^xsd:string ;
+	nir:id "1195534"^^xsd:integer ;
+	nir:guid "6ca3c0e7-982b-401f-9a64-3a660c0b70fb-00122ce0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVmqZ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/818f81ef-636e-4b3a-82a0-855aab3e4821-0013179d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/818f81ef-636e-4b3a-82a0-855aab3e4821-0013179d>
+	rdfs:label "V51"^^xsd:string ;
+	nir:id "1253030"^^xsd:integer ;
+	nir:guid "818f81ef-636e-4b3a-82a0-855aab3e4821-0013179d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVYsB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/02ac842a-a6e3-4fc6-a065-9549e05bf749-00131eff> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/02ac842a-a6e3-4fc6-a065-9549e05bf749-00131eff>
+	rdfs:label "RF-50"^^xsd:string ;
+	nir:id "1265307"^^xsd:integer ;
+	nir:guid "02ac842a-a6e3-4fc6-a065-9549e05bf749-00131eff"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVdss"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/edff2285-d1ca-4490-beaf-2526193931b7-001388d6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/edff2285-d1ca-4490-beaf-2526193931b7-001388d6>
+	rdfs:label "Paving 190"^^xsd:string ;
+	nir:id "1286005"^^xsd:integer ;
+	nir:guid "edff2285-d1ca-4490-beaf-2526193931b7-001388d6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVgnO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/674bd998-7c97-43c2-84c4-e5d358ac1015-0013a6f2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/674bd998-7c97-43c2-84c4-e5d358ac1015-0013a6f2>
+	rdfs:label "Paving 295"^^xsd:string ;
+	nir:id "1287922"^^xsd:integer ;
+	nir:guid "674bd998-7c97-43c2-84c4-e5d358ac1015-0013a6f2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVfNV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/6c68fb31-54f5-4fbf-98cb-85812991f36d-00138900> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/6c68fb31-54f5-4fbf-98cb-85812991f36d-00138900>
+	rdfs:label "GB-321"^^xsd:string ;
+	nir:id "1298864"^^xsd:integer ;
+	nir:guid "6c68fb31-54f5-4fbf-98cb-85812991f36d-00138900"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVkAT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b9368a1-e686-439d-bfee-6aabb2038085-00138af9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b9368a1-e686-439d-bfee-6aabb2038085-00138af9>
+	rdfs:label "9.1.1"^^xsd:string ;
+	nir:id "1298916"^^xsd:integer ;
+	nir:guid "7b9368a1-e686-439d-bfee-6aabb2038085-00138af9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVkB9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b9368a1-e686-439d-bfee-6aabb2038085-00138e2d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b9368a1-e686-439d-bfee-6aabb2038085-00138e2d>
+	rdfs:label "G2"^^xsd:string ;
+	nir:id "1298938"^^xsd:integer ;
+	nir:guid "7b9368a1-e686-439d-bfee-6aabb2038085-00138e2d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVkBN"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013a87c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013a87c>
+	rdfs:label "V30"^^xsd:string ;
+	nir:id "1299108"^^xsd:integer ;
+	nir:guid "d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013a87c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVk69"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013ad27> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013ad27>
+	rdfs:label "V31"^^xsd:string ;
+	nir:id "1299127"^^xsd:integer ;
+	nir:guid "d034efff-65a5-423d-8e76-4ce15c8cd7b1-0013ad27"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVk6Q"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/3f3f9600-76ac-4504-a7db-1e3b8125e3d4-0013c975> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/3f3f9600-76ac-4504-a7db-1e3b8125e3d4-0013c975>
+	rdfs:label "Paving 430"^^xsd:string ;
+	nir:id "1299183"^^xsd:integer ;
+	nir:guid "3f3f9600-76ac-4504-a7db-1e3b8125e3d4-0013c975"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OVk72"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b39e6b06-1972-47fe-bcc2-52ad83e6efff-00143f15> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b39e6b06-1972-47fe-bcc2-52ad83e6efff-00143f15>
+	rdfs:label "G1.1.2"^^xsd:string ;
+	nir:id "1336335"^^xsd:integer ;
+	nir:guid "b39e6b06-1972-47fe-bcc2-52ad83e6efff-00143f15"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OULSY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5edb714f-ad8b-45dd-afcb-dfa91739612c-0014c3aa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5edb714f-ad8b-45dd-afcb-dfa91739612c-0014c3aa>
+	rdfs:label "G1.3.1"^^xsd:string ;
+	nir:id "1360810"^^xsd:integer ;
+	nir:guid "5edb714f-ad8b-45dd-afcb-dfa91739612c-0014c3aa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUV27"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/3a594c2a-771c-4d8b-bec7-76224a821dd6-0014c706> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/3a594c2a-771c-4d8b-bec7-76224a821dd6-0014c706>
+	rdfs:label "G1.3.2"^^xsd:string ;
+	nir:id "1362984"^^xsd:integer ;
+	nir:guid "3a594c2a-771c-4d8b-bec7-76224a821dd6-0014c706"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUVy5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/3fb378d6-5c09-43cc-b9a1-631978292a51-0015563c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/3fb378d6-5c09-43cc-b9a1-631978292a51-0015563c>
+	rdfs:label "G1.1.1"^^xsd:string ;
+	nir:id "1400906"^^xsd:integer ;
+	nir:guid "3fb378d6-5c09-43cc-b9a1-631978292a51-0015563c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OU5Dd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ed83d7c7-236f-4829-a599-97245ac89467-001564e8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ed83d7c7-236f-4829-a599-97245ac89467-001564e8>
+	rdfs:label "2.D.1"^^xsd:string ;
+	nir:id "1402088"^^xsd:integer ;
+	nir:guid "ed83d7c7-236f-4829-a599-97245ac89467-001564e8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OU5V5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ae36c9fc-2b96-460d-87af-4b3c11f6e4d2-0015af46> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ae36c9fc-2b96-460d-87af-4b3c11f6e4d2-0015af46>
+	rdfs:label "2.D.3 Glass"^^xsd:string ;
+	nir:id "1421126"^^xsd:integer ;
+	nir:guid "ae36c9fc-2b96-460d-87af-4b3c11f6e4d2-0015af46"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OU9nh"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2f0cd090-b5f6-46a8-a8bd-c49df9eb1dc9-0015c10d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2f0cd090-b5f6-46a8-a8bd-c49df9eb1dc9-0015c10d>
+	rdfs:label "FAC 3.A.2"^^xsd:string ;
+	nir:id "1425677"^^xsd:integer ;
+	nir:guid "2f0cd090-b5f6-46a8-a8bd-c49df9eb1dc9-0015c10d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUF8W"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/66c7df0e-4b87-4591-96f2-4ed76c08c4b8-0015c4c9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/66c7df0e-4b87-4591-96f2-4ed76c08c4b8-0015c4c9>
+	rdfs:label "3.A.5"^^xsd:string ;
+	nir:id "1426633"^^xsd:integer ;
+	nir:guid "66c7df0e-4b87-4591-96f2-4ed76c08c4b8-0015c4c9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUFVa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/696ea49b-fed4-4d0f-a96f-02ab14dd5a72-00162d23> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/696ea49b-fed4-4d0f-a96f-02ab14dd5a72-00162d23>
+	rdfs:label "PB-650"^^xsd:string ;
+	nir:id "1454690"^^xsd:integer ;
+	nir:guid "696ea49b-fed4-4d0f-a96f-02ab14dd5a72-00162d23"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUm5F"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/2cee3c3d-f007-4430-839d-6990b330330e-00162d6e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/2cee3c3d-f007-4430-839d-6990b330330e-00162d6e>
+	rdfs:label "RF-13"^^xsd:string ;
+	nir:id "1454699"^^xsd:integer ;
+	nir:guid "2cee3c3d-f007-4430-839d-6990b330330e-00162d6e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUm56"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/2cee3c3d-f007-4430-839d-6990b330330e-00162e1d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/2cee3c3d-f007-4430-839d-6990b330330e-00162e1d>
+	rdfs:label "T-30"^^xsd:string ;
+	nir:id "1454708"^^xsd:integer ;
+	nir:guid "2cee3c3d-f007-4430-839d-6990b330330e-00162e1d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUm5P"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a4fb6bd8-f918-47cd-9dab-a50e26b85938-0016481d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a4fb6bd8-f918-47cd-9dab-a50e26b85938-0016481d>
+	rdfs:label "GB-322"^^xsd:string ;
+	nir:id "1460253"^^xsd:integer ;
+	nir:guid "a4fb6bd8-f918-47cd-9dab-a50e26b85938-0016481d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUtim"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/0fe29dd5-1cc4-4c5d-b155-e0aeef249035-001656a9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/0fe29dd5-1cc4-4c5d-b155-e0aeef249035-001656a9>
+	rdfs:label "G03"^^xsd:string ;
+	nir:id "1463977"^^xsd:integer ;
+	nir:guid "0fe29dd5-1cc4-4c5d-b155-e0aeef249035-001656a9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUsM4"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/9fb0f375-2f17-4e97-8f7a-ec972766b383-00165bbe> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/9fb0f375-2f17-4e97-8f7a-ec972766b383-00165bbe>
+	rdfs:label "GB-222"^^xsd:string ;
+	nir:id "1466604"^^xsd:integer ;
+	nir:guid "9fb0f375-2f17-4e97-8f7a-ec972766b383-00165bbe"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUrF1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166107> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166107>
+	rdfs:label "GB-221"^^xsd:string ;
+	nir:id "1467773"^^xsd:integer ;
+	nir:guid "5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166107"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUrPG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166261> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166261>
+	rdfs:label "G43"^^xsd:string ;
+	nir:id "1467782"^^xsd:integer ;
+	nir:guid "5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166261"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUrQh"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166839> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166839>
+	rdfs:label "GB-023"^^xsd:string ;
+	nir:id "1468473"^^xsd:integer ;
+	nir:guid "5d0c58b7-41bb-44ef-87d3-983ef0d1f941-00166839"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUriK"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-001668a5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5d0c58b7-41bb-44ef-87d3-983ef0d1f941-001668a5>
+	rdfs:label "Insitu Concrete 400mm"^^xsd:string ;
+	nir:id "1468581"^^xsd:integer ;
+	nir:guid "5d0c58b7-41bb-44ef-87d3-983ef0d1f941-001668a5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUrk8"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/fb3bd901-b561-435f-aab8-58cc31781c07-001667d8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/fb3bd901-b561-435f-aab8-58cc31781c07-001667d8>
+	rdfs:label "GB-203"^^xsd:string ;
+	nir:id "1468801"^^xsd:integer ;
+	nir:guid "fb3bd901-b561-435f-aab8-58cc31781c07-001667d8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUrgi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/edf08881-ed14-41e9-9f55-66643a4d9018-00166c86> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/edf08881-ed14-41e9-9f55-66643a4d9018-00166c86>
+	rdfs:label "GB-213"^^xsd:string ;
+	nir:id "1469574"^^xsd:integer ;
+	nir:guid "edf08881-ed14-41e9-9f55-66643a4d9018-00166c86"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUr_h"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b585fbf2-5371-4d91-b834-ed149033d1e9-00168ec2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b585fbf2-5371-4d91-b834-ed149033d1e9-00168ec2>
+	rdfs:label "GB-022"^^xsd:string ;
+	nir:id "1478338"^^xsd:integer ;
+	nir:guid "b585fbf2-5371-4d91-b834-ed149033d1e9-00168ec2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUxtl"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ecfdc50a-64fd-4e63-9e40-6fd120bde3c6-00169b8a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ecfdc50a-64fd-4e63-9e40-6fd120bde3c6-00169b8a>
+	rdfs:label "RF-T15"^^xsd:string ;
+	nir:id "1481610"^^xsd:integer ;
+	nir:guid "ecfdc50a-64fd-4e63-9e40-6fd120bde3c6-00169b8a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUwYd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-00169e81> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-00169e81>
+	rdfs:label "FL-011"^^xsd:string ;
+	nir:id "1482369"^^xsd:integer ;
+	nir:guid "45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-00169e81"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUwsi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-0016a492> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-0016a492>
+	rdfs:label "GB-012"^^xsd:string ;
+	nir:id "1483922"^^xsd:integer ;
+	nir:guid "45a17ab2-17f4-452c-a4ba-c9a5cfa4a8a5-0016a492"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUvU$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d44dbf74-131c-4b58-b055-425033987c06-0016afb3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d44dbf74-131c-4b58-b055-425033987c06-0016afb3>
+	rdfs:label "GB-021"^^xsd:string ;
+	nir:id "1488846"^^xsd:integer ;
+	nir:guid "d44dbf74-131c-4b58-b055-425033987c06-0016afb3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUuJZ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b481> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b481>
+	rdfs:label "GB-302"^^xsd:string ;
+	nir:id "1488930"^^xsd:integer ;
+	nir:guid "a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b481"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUuiF"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b9fa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b9fa>
+	rdfs:label "RF-11"^^xsd:string ;
+	nir:id "1489402"^^xsd:integer ;
+	nir:guid "a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016b9fa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUuhN"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016c35f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016c35f>
+	rdfs:label "RF-12"^^xsd:string ;
+	nir:id "1491807"^^xsd:integer ;
+	nir:guid "a7fa0576-b89f-4b7a-a627-d146bbd72a56-0016c35f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OU$1o"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/93945980-94e0-4fe9-8952-0119f10f0eba-0016c404> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/93945980-94e0-4fe9-8952-0119f10f0eba-0016c404>
+	rdfs:label "G04"^^xsd:string ;
+	nir:id "1491972"^^xsd:integer ;
+	nir:guid "93945980-94e0-4fe9-8952-0119f10f0eba-0016c404"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OU$Sf"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/f7074367-49e7-418d-8357-39d8217339b5-0016e12b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/f7074367-49e7-418d-8357-39d8217339b5-0016e12b>
+	rdfs:label "FAC 3.B.3"^^xsd:string ;
+	nir:id "1499435"^^xsd:integer ;
+	nir:guid "f7074367-49e7-418d-8357-39d8217339b5-0016e12b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUz86"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/54f55780-dbb1-42b7-895a-2309fe171f6e-00171f6e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/54f55780-dbb1-42b7-895a-2309fe171f6e-00171f6e>
+	rdfs:label "RF-39"^^xsd:string ;
+	nir:id "1515374"^^xsd:integer ;
+	nir:guid "54f55780-dbb1-42b7-895a-2309fe171f6e-00171f6e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUYn3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/54f55780-dbb1-42b7-895a-2309fe171f6e-00172758> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/54f55780-dbb1-42b7-895a-2309fe171f6e-00172758>
+	rdfs:label "RF-30"^^xsd:string ;
+	nir:id "1517400"^^xsd:integer ;
+	nir:guid "54f55780-dbb1-42b7-895a-2309fe171f6e-00172758"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUXHr"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/40ee1e2c-f941-4f29-8317-c5c8e75c100e-001754aa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/40ee1e2c-f941-4f29-8317-c5c8e75c100e-001754aa>
+	rdfs:label "4.A.2"^^xsd:string ;
+	nir:id "1529002"^^xsd:integer ;
+	nir:guid "40ee1e2c-f941-4f29-8317-c5c8e75c100e-001754aa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OUcU7"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/094b93b7-1410-4981-b1f4-cf0df7c72de7-00180d41> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/094b93b7-1410-4981-b1f4-cf0df7c72de7-00180d41>
+	rdfs:label "Insitu Concrete 890mm"^^xsd:string ;
+	nir:id "1576257"^^xsd:integer ;
+	nir:guid "094b93b7-1410-4981-b1f4-cf0df7c72de7-00180d41"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTJvi"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/27412c05-93d9-48f6-8563-824d2983fb4c-0018418d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/27412c05-93d9-48f6-8563-824d2983fb4c-0018418d>
+	rdfs:label "2.D.4"^^xsd:string ;
+	nir:id "1589645"^^xsd:integer ;
+	nir:guid "27412c05-93d9-48f6-8563-824d2983fb4c-0018418d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTNAW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/f77d158b-a600-4d54-a7e2-4e4bce378dbb-00184f17> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/f77d158b-a600-4d54-a7e2-4e4bce378dbb-00184f17>
+	rdfs:label "3.D.1"^^xsd:string ;
+	nir:id "1593541"^^xsd:integer ;
+	nir:guid "f77d158b-a600-4d54-a7e2-4e4bce378dbb-00184f17"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTMFe"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/59979916-d407-43b5-a878-3fbfe9101e71-00185bed> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/59979916-d407-43b5-a878-3fbfe9101e71-00185bed>
+	rdfs:label "3.D.2"^^xsd:string ;
+	nir:id "1596397"^^xsd:integer ;
+	nir:guid "59979916-d407-43b5-a878-3fbfe9101e71-00185bed"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTMZ0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/c948505a-977f-4772-bbe6-615fd90908af-0018c54e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/c948505a-977f-4772-bbe6-615fd90908af-0018c54e>
+	rdfs:label "Insitu Concrete 85mm"^^xsd:string ;
+	nir:id "1623374"^^xsd:integer ;
+	nir:guid "c948505a-977f-4772-bbe6-615fd90908af-0018c54e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTVPZ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b286196-e0f1-40be-8ed0-174175737275-0018ccc2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b286196-e0f1-40be-8ed0-174175737275-0018ccc2>
+	rdfs:label "2.C.1"^^xsd:string ;
+	nir:id "1634096"^^xsd:integer ;
+	nir:guid "7b286196-e0f1-40be-8ed0-174175737275-0018ccc2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTTmT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/61753ed9-9855-4869-afac-d54cd33bf240-001913a3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/61753ed9-9855-4869-afac-d54cd33bf240-001913a3>
+	rdfs:label "B200 - ALuminum"^^xsd:string ;
+	nir:id "1643427"^^xsd:integer ;
+	nir:guid "61753ed9-9855-4869-afac-d54cd33bf240-001913a3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OT22E"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/9a196569-d04b-4ee6-9f46-4a5ddd3cf4c0-001923d2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/9a196569-d04b-4ee6-9f46-4a5ddd3cf4c0-001923d2>
+	rdfs:label "Interior Glazing"^^xsd:string ;
+	nir:id "1647570"^^xsd:integer ;
+	nir:guid "9a196569-d04b-4ee6-9f46-4a5ddd3cf4c0-001923d2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OT13$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a35e6d83-fb5f-4fce-865e-4abcfad9d140-00199178> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a35e6d83-fb5f-4fce-865e-4abcfad9d140-00199178>
+	rdfs:label "T02_Parking Stripes"^^xsd:string ;
+	nir:id "1675640"^^xsd:integer ;
+	nir:guid "a35e6d83-fb5f-4fce-865e-4abcfad9d140-00199178"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OTA9L"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/36128102-17ec-488d-9fe9-360f3e8d6363-001c4706> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/36128102-17ec-488d-9fe9-360f3e8d6363-001c4706>
+	rdfs:label "Pavement YH"^^xsd:string ;
+	nir:id "1854628"^^xsd:integer ;
+	nir:guid "36128102-17ec-488d-9fe9-360f3e8d6363-001c4706"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSN_9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/36128102-17ec-488d-9fe9-360f3e8d6363-001c49d2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/36128102-17ec-488d-9fe9-360f3e8d6363-001c49d2>
+	rdfs:label "Around Ramp"^^xsd:string ;
+	nir:id "1854652"^^xsd:integer ;
+	nir:guid "36128102-17ec-488d-9fe9-360f3e8d6363-001c49d2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSN_H"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c53eb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c53eb>
+	rdfs:label "Bike Lane"^^xsd:string ;
+	nir:id "1856491"^^xsd:integer ;
+	nir:guid "4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c53eb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSM36"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c555e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c555e>
+	rdfs:label "Ramp top"^^xsd:string ;
+	nir:id "1856862"^^xsd:integer ;
+	nir:guid "4463e9ae-706c-4f8a-8bda-a5ce69d8794f-001c555e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSMPp"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/05f25b6d-b942-4cdc-83d4-45237bec75f5-001c57cb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/05f25b6d-b942-4cdc-83d4-45237bec75f5-001c57cb>
+	rdfs:label "VV"^^xsd:string ;
+	nir:id "1857499"^^xsd:integer ;
+	nir:guid "05f25b6d-b942-4cdc-83d4-45237bec75f5-001c57cb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSMJs"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/95f3498a-4e33-47ea-954a-f71c71563a42-001c5d44> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/95f3498a-4e33-47ea-954a-f71c71563a42-001c5d44>
+	rdfs:label "Balustrade-grille"^^xsd:string ;
+	nir:id "1858884"^^xsd:integer ;
+	nir:guid "95f3498a-4e33-47ea-954a-f71c71563a42-001c5d44"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSMvf"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cd9cb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cd9cb>
+	rdfs:label "Ramp VV"^^xsd:string ;
+	nir:id "1890763"^^xsd:integer ;
+	nir:guid "e4c6191b-f1f2-45ee-8725-a046f10a645b-001cd9cb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSUhc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdc92> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdc92>
+	rdfs:label "Yellow Houses VV"^^xsd:string ;
+	nir:id "1891474"^^xsd:integer ;
+	nir:guid "e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdc92"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSU_$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdfcd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdfcd>
+	rdfs:label "Yellow House Roofs VV"^^xsd:string ;
+	nir:id "1892301"^^xsd:integer ;
+	nir:guid "e4c6191b-f1f2-45ee-8725-a046f10a645b-001cdfcd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSUpW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fffb5442-5183-4bb4-a4c4-2217b667aefa-001ce6b1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fffb5442-5183-4bb4-a4c4-2217b667aefa-001ce6b1>
+	rdfs:label "3.D.1"^^xsd:string ;
+	nir:id "1920115"^^xsd:integer ;
+	nir:guid "fffb5442-5183-4bb4-a4c4-2217b667aefa-001ce6b1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OS7zU"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/39af01e8-c9ed-480b-8887-f83794ff4814-001e0d14> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/39af01e8-c9ed-480b-8887-f83794ff4814-001e0d14>
+	rdfs:label "B100"^^xsd:string ;
+	nir:id "1970206"^^xsd:integer ;
+	nir:guid "39af01e8-c9ed-480b-8887-f83794ff4814-001e0d14"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSoCp"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/39af01e8-c9ed-480b-8887-f83794ff4814-001e0f25> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/39af01e8-c9ed-480b-8887-f83794ff4814-001e0f25>
+	rdfs:label "FAC 3.A.3"^^xsd:string ;
+	nir:id "1970217"^^xsd:integer ;
+	nir:guid "39af01e8-c9ed-480b-8887-f83794ff4814-001e0f25"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSoC4"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/9778fd2e-87d3-4407-a7be-fa8c2ae19bcb-001e1b68> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/9778fd2e-87d3-4407-a7be-fa8c2ae19bcb-001e1b68>
+	rdfs:label "B100"^^xsd:string ;
+	nir:id "1973096"^^xsd:integer ;
+	nir:guid "9778fd2e-87d3-4407-a7be-fa8c2ae19bcb-001e1b68"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSoX5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4b3e5cbf-f1c6-4164-993f-2ac2a587092b-001e26e2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4b3e5cbf-f1c6-4164-993f-2ac2a587092b-001e26e2>
+	rdfs:label "1 NEW"^^xsd:string ;
+	nir:id "1979041"^^xsd:integer ;
+	nir:guid "4b3e5cbf-f1c6-4164-993f-2ac2a587092b-001e26e2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSm6C"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/1f4b50ca-f5a8-48bb-bbb9-c30f9e9d6ae2-001ea3bd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/1f4b50ca-f5a8-48bb-bbb9-c30f9e9d6ae2-001ea3bd>
+	rdfs:label "FAC 3.D.1"^^xsd:string ;
+	nir:id "2011366"^^xsd:integer ;
+	nir:guid "1f4b50ca-f5a8-48bb-bbb9-c30f9e9d6ae2-001ea3bd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSuFB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/da5f252c-1caf-4578-942d-f0dc801abcc3-001e9c86> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/da5f252c-1caf-4578-942d-f0dc801abcc3-001e9c86>
+	rdfs:label "FL-Tiles as V22"^^xsd:string ;
+	nir:id "2019209"^^xsd:integer ;
+	nir:guid "da5f252c-1caf-4578-942d-f0dc801abcc3-001e9c86"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OS$oa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/da5f252c-1caf-4578-942d-f0dc801abcc3-001ea05a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/da5f252c-1caf-4578-942d-f0dc801abcc3-001ea05a>
+	rdfs:label "GB-112"^^xsd:string ;
+	nir:id "2019264"^^xsd:integer ;
+	nir:guid "da5f252c-1caf-4578-942d-f0dc801abcc3-001ea05a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OS$pj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/87c91472-c807-45ce-bf71-dc01a2c82e94-001ea280> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/87c91472-c807-45ce-bf71-dc01a2c82e94-001ea280>
+	rdfs:label "V68"^^xsd:string ;
+	nir:id "2019266"^^xsd:integer ;
+	nir:guid "87c91472-c807-45ce-bf71-dc01a2c82e94-001ea280"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OS$pl"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4f400e7b-527f-4ec7-8149-c5b983e434f8-001ef2fe> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4f400e7b-527f-4ec7-8149-c5b983e434f8-001ef2fe>
+	rdfs:label "FAC 3.D.2"^^xsd:string ;
+	nir:id "2029156"^^xsd:integer ;
+	nir:guid "4f400e7b-527f-4ec7-8149-c5b983e434f8-001ef2fe"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSyL9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5b9c1ad1-165a-426e-a590-6a211fb0c84d-001f3267> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5b9c1ad1-165a-426e-a590-6a211fb0c84d-001f3267>
+	rdfs:label "2.D.4 Glass"^^xsd:string ;
+	nir:id "2045352"^^xsd:integer ;
+	nir:guid "5b9c1ad1-165a-426e-a590-6a211fb0c84d-001f3267"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSWQ5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fa2fd575-5ef0-4929-b35d-b08de35ca410-001f1ff1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fa2fd575-5ef0-4929-b35d-b08de35ca410-001f1ff1>
+	rdfs:label "K201 (380MM)"^^xsd:string ;
+	nir:id "2045995"^^xsd:integer ;
+	nir:guid "fa2fd575-5ef0-4929-b35d-b08de35ca410-001f1ff1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSWi6"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fa2fd575-5ef0-4929-b35d-b08de35ca410-001f2106> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fa2fd575-5ef0-4929-b35d-b08de35ca410-001f2106>
+	rdfs:label "K202 (380MM)"^^xsd:string ;
+	nir:id "2046000"^^xsd:integer ;
+	nir:guid "fa2fd575-5ef0-4929-b35d-b08de35ca410-001f2106"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSWiT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b85e6f2d-bb45-4712-a521-7819f358eaf2-001f3a55> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b85e6f2d-bb45-4712-a521-7819f358eaf2-001f3a55>
+	rdfs:label "B201 - Gips"^^xsd:string ;
+	nir:id "2052501"^^xsd:integer ;
+	nir:guid "b85e6f2d-bb45-4712-a521-7819f358eaf2-001f3a55"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OScAu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/416542b0-67ad-4b92-8eaf-adfbf0c0e165-001f4772> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/416542b0-67ad-4b92-8eaf-adfbf0c0e165-001f4772>
+	rdfs:label "V37"^^xsd:string ;
+	nir:id "2052567"^^xsd:integer ;
+	nir:guid "416542b0-67ad-4b92-8eaf-adfbf0c0e165-001f4772"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OScBw"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c582659f-7ef4-448f-8aad-9532abc2f99a-001f4cb0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c582659f-7ef4-448f-8aad-9532abc2f99a-001f4cb0>
+	rdfs:label "B202"^^xsd:string ;
+	nir:id "2052594"^^xsd:integer ;
+	nir:guid "c582659f-7ef4-448f-8aad-9532abc2f99a-001f4cb0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OScBV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/f095feca-9fd3-4c50-8ed5-bd5af2e94172-001f7509> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/f095feca-9fd3-4c50-8ed5-bd5af2e94172-001f7509>
+	rdfs:label "B101"^^xsd:string ;
+	nir:id "2075515"^^xsd:integer ;
+	nir:guid "f095feca-9fd3-4c50-8ed5-bd5af2e94172-001f7509"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSfXM"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d42237d7-6dcc-4383-8480-642a7ff31a6f-001fb562> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d42237d7-6dcc-4383-8480-642a7ff31a6f-001fb562>
+	rdfs:label "FAC 3.A.1"^^xsd:string ;
+	nir:id "2085089"^^xsd:integer ;
+	nir:guid "d42237d7-6dcc-4383-8480-642a7ff31a6f-001fb562"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSkFC"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fcc85> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fcc85>
+	rdfs:label "GB-114"^^xsd:string ;
+	nir:id "2087252"^^xsd:integer ;
+	nir:guid "5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fcc85"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSkfv"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fd3f2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fd3f2>
+	rdfs:label "B200 - Gips"^^xsd:string ;
+	nir:id "2087321"^^xsd:integer ;
+	nir:guid "5d2f0394-e6bb-4f0d-bbcf-36287673869b-001fd3f2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSkgq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe431> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe431>
+	rdfs:label "K304"^^xsd:string ;
+	nir:id "2093627"^^xsd:integer ;
+	nir:guid "6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe431"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSi4M"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe4fb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe4fb>
+	rdfs:label "B001 - Gips"^^xsd:string ;
+	nir:id "2093630"^^xsd:integer ;
+	nir:guid "6f72671b-1399-411c-b1cc-a54a29a47fa0-001fe4fb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSi4J"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/eaeb7986-610c-4645-9c47-7913d212ea21-001ff9fc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/eaeb7986-610c-4645-9c47-7913d212ea21-001ff9fc>
+	rdfs:label "GB-111"^^xsd:string ;
+	nir:id "2095612"^^xsd:integer ;
+	nir:guid "eaeb7986-610c-4645-9c47-7913d212ea21-001ff9fc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OSihH"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200b96> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200b96>
+	rdfs:label "GB-115"^^xsd:string ;
+	nir:id "2100118"^^xsd:integer ;
+	nir:guid "9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200b96"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJJYx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200c2c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200c2c>
+	rdfs:label "GB-104"^^xsd:string ;
+	nir:id "2100268"^^xsd:integer ;
+	nir:guid "9c55148c-b5b3-440e-8b52-3a5acbabbcdc-00200c2c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJJy1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b897c89e-751a-4d35-836b-8515be150bd5-00202e46> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b897c89e-751a-4d35-836b-8515be150bd5-00202e46>
+	rdfs:label "GB-113"^^xsd:string ;
+	nir:id "2108998"^^xsd:integer ;
+	nir:guid "b897c89e-751a-4d35-836b-8515be150bd5-00202e46"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJHrh"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/3ab669f8-5f70-44d5-a4ab-fad1d121344f-002084c9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/3ab669f8-5f70-44d5-a4ab-fad1d121344f-002084c9>
+	rdfs:label "Precast Concrete 205mm"^^xsd:string ;
+	nir:id "2142811"^^xsd:integer ;
+	nir:guid "3ab669f8-5f70-44d5-a4ab-fad1d121344f-002084c9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJO5s"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ca4d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ca4d>
+	rdfs:label "Concrete - 200mm"^^xsd:string ;
+	nir:id "2223658"^^xsd:integer ;
+	nir:guid "d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ca4d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJDq7"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccf9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccf9>
+	rdfs:label "Concrete - 500mm"^^xsd:string ;
+	nir:id "2224342"^^xsd:integer ;
+	nir:guid "d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccf9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJCFx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccfd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccfd>
+	rdfs:label "Concrete - 300mm"^^xsd:string ;
+	nir:id "2224346"^^xsd:integer ;
+	nir:guid "d57452c8-5a3b-48f1-9cb3-dd3342f3da85-0021ccfd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJCFt"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/9376bd67-026e-4587-8ceb-31390d7eb104-00229bed> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/9376bd67-026e-4587-8ceb-31390d7eb104-00229bed>
+	rdfs:label "B202"^^xsd:string ;
+	nir:id "2268141"^^xsd:integer ;
+	nir:guid "9376bd67-026e-4587-8ceb-31390d7eb104-00229bed"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJwZ0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ed86b22e-1938-4083-9a78-8b3efa2a66c4-0023c50b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ed86b22e-1938-4083-9a78-8b3efa2a66c4-0023c50b>
+	rdfs:label "Landing"^^xsd:string ;
+	nir:id "2344203"^^xsd:integer ;
+	nir:guid "ed86b22e-1938-4083-9a78-8b3efa2a66c4-0023c50b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OJlOc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/451fd28d-5be2-4362-9084-0c5d65085729-002c2b6a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/451fd28d-5be2-4362-9084-0c5d65085729-002c2b6a>
+	rdfs:label "FAC 3.B.2"^^xsd:string ;
+	nir:id "2894698"^^xsd:integer ;
+	nir:guid "451fd28d-5be2-4362-9084-0c5d65085729-002c2b6a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OGHX7"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-00317fc6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-00317fc6>
+	rdfs:label "GB-032.400"^^xsd:string ;
+	nir:id "3243974"^^xsd:integer ;
+	nir:guid "a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-00317fc6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ON4ph"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-0031806e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-0031806e>
+	rdfs:label "GB-032.500"^^xsd:string ;
+	nir:id "3244142"^^xsd:integer ;
+	nir:guid "a25acbc0-3ce3-40dc-91ba-7eb1cea6ff49-0031806e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ONBD3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b2848d50-2f7f-46cc-ac7c-25f074bbd2cb-0032441a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b2848d50-2f7f-46cc-ac7c-25f074bbd2cb-0032441a>
+	rdfs:label "B100 75mm"^^xsd:string ;
+	nir:id "3341014"^^xsd:integer ;
+	nir:guid "b2848d50-2f7f-46cc-ac7c-25f074bbd2cb-0032441a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ONydx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/43761a36-6abb-44e5-af72-5df733b39a41-003302e2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/43761a36-6abb-44e5-af72-5df733b39a41-003302e2>
+	rdfs:label "B100 100mm"^^xsd:string ;
+	nir:id "3343074"^^xsd:integer ;
+	nir:guid "43761a36-6abb-44e5-af72-5df733b39a41-003302e2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ONZ7F"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2f47b8fc-622e-49b7-afc8-0ebf285bd935-0033d535> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2f47b8fc-622e-49b7-afc8-0ebf285bd935-0033d535>
+	rdfs:label "FAC 3.A.5"^^xsd:string ;
+	nir:id "3401816"^^xsd:integer ;
+	nir:guid "2f47b8fc-622e-49b7-afc8-0ebf285bd935-0033d535"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ONjjr"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/51234045-583e-45f0-b09b-e7fe660422f0-0034e264> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/51234045-583e-45f0-b09b-e7fe660422f0-0034e264>
+	rdfs:label "B102"^^xsd:string ;
+	nir:id "3470992"^^xsd:integer ;
+	nir:guid "51234045-583e-45f0-b09b-e7fe660422f0-0034e264"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OMSMz"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b2026a85-232a-40c1-a681-b81e3308649f-0034f76b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b2026a85-232a-40c1-a681-b81e3308649f-0034f76b>
+	rdfs:label "B102"^^xsd:string ;
+	nir:id "3476784"^^xsd:integer ;
+	nir:guid "b2026a85-232a-40c1-a681-b81e3308649f-0034f76b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OM3uT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b2026a85-232a-40c1-a681-b81e3308649f-0034fb0f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b2026a85-232a-40c1-a681-b81e3308649f-0034fb0f>
+	rdfs:label "FAC 3.B.1"^^xsd:string ;
+	nir:id "3476887"^^xsd:integer ;
+	nir:guid "b2026a85-232a-40c1-a681-b81e3308649f-0034fb0f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OM3ww"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/912c92d5-281d-4865-b435-088449c6c488-003cb1cb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/912c92d5-281d-4865-b435-088449c6c488-003cb1cb>
+	rdfs:label "L21 Ceiling Bulkhead"^^xsd:string ;
+	nir:id "3981046"^^xsd:integer ;
+	nir:guid "912c92d5-281d-4865-b435-088449c6c488-003cb1cb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKOtR"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/568f1afe-90a7-483e-93c3-8268c8133b26-003d2166> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/568f1afe-90a7-483e-93c3-8268c8133b26-003d2166>
+	rdfs:label "GB-108"^^xsd:string ;
+	nir:id "4013707"^^xsd:integer ;
+	nir:guid "568f1afe-90a7-483e-93c3-8268c8133b26-003d2166"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK0sc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/7be9edca-f7eb-4cc0-bb83-66a8be10a6d7-003d2fc6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/7be9edca-f7eb-4cc0-bb83-66a8be10a6d7-003d2fc6>
+	rdfs:label "G10"^^xsd:string ;
+	nir:id "4013939"^^xsd:integer ;
+	nir:guid "7be9edca-f7eb-4cc0-bb83-66a8be10a6d7-003d2fc6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK0nU"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d404c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d404c>
+	rdfs:label "G99"^^xsd:string ;
+	nir:id "4016467"^^xsd:integer ;
+	nir:guid "2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d404c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7f_"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d419e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d419e>
+	rdfs:label "G07"^^xsd:string ;
+	nir:id "4016484"^^xsd:integer ;
+	nir:guid "2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d419e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7f9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d4276> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d4276>
+	rdfs:label "G42"^^xsd:string ;
+	nir:id "4016490"^^xsd:integer ;
+	nir:guid "2a5c1564-4ffe-4d76-a9fe-d07387e1612f-003d4276"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7f7"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d45be> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d45be>
+	rdfs:label "G31"^^xsd:string ;
+	nir:id "4016627"^^xsd:integer ;
+	nir:guid "30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d45be"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7hU"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d4656> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d4656>
+	rdfs:label "TB-34"^^xsd:string ;
+	nir:id "4016637"^^xsd:integer ;
+	nir:guid "30f88b9c-c2b7-4350-b68f-bdaba70a52ec-003d4656"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7hG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/4895d546-859b-4a7e-a1c5-11c56652c92d-003d470a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/4895d546-859b-4a7e-a1c5-11c56652c92d-003d470a>
+	rdfs:label "T-21/22"^^xsd:string ;
+	nir:id "4016643"^^xsd:integer ;
+	nir:guid "4895d546-859b-4a7e-a1c5-11c56652c92d-003d470a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK7ak"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/151be444-0afa-46f5-8cdf-8af957170554-003d4edf> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/151be444-0afa-46f5-8cdf-8af957170554-003d4edf>
+	rdfs:label "GB-212"^^xsd:string ;
+	nir:id "4023426"^^xsd:integer ;
+	nir:guid "151be444-0afa-46f5-8cdf-8af957170554-003d4edf"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK5Ul"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/80c0ba21-a7aa-4d98-8c64-9e7656bb9624-003d6464> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/80c0ba21-a7aa-4d98-8c64-9e7656bb9624-003d6464>
+	rdfs:label "TB-50"^^xsd:string ;
+	nir:id "4025021"^^xsd:integer ;
+	nir:guid "80c0ba21-a7aa-4d98-8c64-9e7656bb9624-003d6464"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK5cG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6b1e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6b1e>
+	rdfs:label "TB-51"^^xsd:string ;
+	nir:id "4025403"^^xsd:integer ;
+	nir:guid "451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6b1e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK5yM"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6e7b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6e7b>
+	rdfs:label "TB-38"^^xsd:string ;
+	nir:id "4025979"^^xsd:integer ;
+	nir:guid "451c3c04-c4aa-466d-9d60-e83a0d18e479-003d6e7b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK5rM"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/22547b50-100d-43c4-8073-ea92f07ddd11-003d7a95> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/22547b50-100d-43c4-8073-ea92f07ddd11-003d7a95>
+	rdfs:label "GB-035"^^xsd:string ;
+	nir:id "4029077"^^xsd:integer ;
+	nir:guid "22547b50-100d-43c4-8073-ea92f07ddd11-003d7a95"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK4cu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d8fde> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d8fde>
+	rdfs:label "T-40"^^xsd:string ;
+	nir:id "4034526"^^xsd:integer ;
+	nir:guid "423fa254-3c83-4317-a94d-74eb5076a85e-003d8fde"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKBpp"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d91bd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d91bd>
+	rdfs:label "T-41"^^xsd:string ;
+	nir:id "4035005"^^xsd:integer ;
+	nir:guid "423fa254-3c83-4317-a94d-74eb5076a85e-003d91bd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKAAG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d91dd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d91dd>
+	rdfs:label "T-45"^^xsd:string ;
+	nir:id "4035037"^^xsd:integer ;
+	nir:guid "423fa254-3c83-4317-a94d-74eb5076a85e-003d91dd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKABm"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d920c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d920c>
+	rdfs:label "T-46"^^xsd:string ;
+	nir:id "4035084"^^xsd:integer ;
+	nir:guid "423fa254-3c83-4317-a94d-74eb5076a85e-003d920c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKA4X"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d989d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/423fa254-3c83-4317-a94d-74eb5076a85e-003d989d>
+	rdfs:label "TB-53"^^xsd:string ;
+	nir:id "4036765"^^xsd:integer ;
+	nir:guid "423fa254-3c83-4317-a94d-74eb5076a85e-003d989d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKAkm"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8b44> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8b44>
+	rdfs:label "GB-205"^^xsd:string ;
+	nir:id "4041525"^^xsd:integer ;
+	nir:guid "a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8b44"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK9WO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8f7d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8f7d>
+	rdfs:label "GB-101"^^xsd:string ;
+	nir:id "4041660"^^xsd:integer ;
+	nir:guid "a2971bc6-a397-47b9-91b2-e1609c9f8acb-003d8f7d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK9YH"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9bfe> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9bfe>
+	rdfs:label "GB-032-490mm"^^xsd:string ;
+	nir:id "4044164"^^xsd:integer ;
+	nir:guid "06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9bfe"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK8Qf"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9db0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9db0>
+	rdfs:label "TB-01"^^xsd:string ;
+	nir:id "4044196"^^xsd:integer ;
+	nir:guid "06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9db0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK8Q9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9df7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9df7>
+	rdfs:label "T70"^^xsd:string ;
+	nir:id "4044206"^^xsd:integer ;
+	nir:guid "06fa4cf4-08bf-45ab-b500-9c4a6a2fa564-003d9df7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK8Q3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dc7e5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dc7e5>
+	rdfs:label "GB-031"^^xsd:string ;
+	nir:id "4050257"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dc7e5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKFvy"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dca55> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dca55>
+	rdfs:label "TB-39"^^xsd:string ;
+	nir:id "4050268"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dca55"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKFvn"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dcc82> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dcc82>
+	rdfs:label "T11"^^xsd:string ;
+	nir:id "4050285"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dcc82"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKFv0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dcfd3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dcfd3>
+	rdfs:label "TB-39_520"^^xsd:string ;
+	nir:id "4050899"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dcfd3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKFp_"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd159> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd159>
+	rdfs:label "G09"^^xsd:string ;
+	nir:id "4051289"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dd159"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKE9q"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd20b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd20b>
+	rdfs:label "GB-102_517mm"^^xsd:string ;
+	nir:id "4051467"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dd20b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKE4c"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd431> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd431>
+	rdfs:label "GB-031_A"^^xsd:string ;
+	nir:id "4052017"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dd431"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKESS"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd45f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/cd1d554e-3d96-4d4d-87e7-558994402e15-003dd45f>
+	rdfs:label "GB-031_B"^^xsd:string ;
+	nir:id "4052063"^^xsd:integer ;
+	nir:guid "cd1d554e-3d96-4d4d-87e7-558994402e15-003dd45f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKETo"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/13b32230-e4f5-40ca-be00-143d413f9b22-003daccb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/13b32230-e4f5-40ca-be00-143d413f9b22-003daccb>
+	rdfs:label "TB-36 LVL5"^^xsd:string ;
+	nir:id "4052695"^^xsd:integer ;
+	nir:guid "13b32230-e4f5-40ca-be00-143d413f9b22-003daccb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKENw"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/13b32230-e4f5-40ca-be00-143d413f9b22-003dadb5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/13b32230-e4f5-40ca-be00-143d413f9b22-003dadb5>
+	rdfs:label "TB-60"^^xsd:string ;
+	nir:id "4052697"^^xsd:integer ;
+	nir:guid "13b32230-e4f5-40ca-be00-143d413f9b22-003dadb5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKENq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dbdc4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dbdc4>
+	rdfs:label "TB-61"^^xsd:string ;
+	nir:id "4052699"^^xsd:integer ;
+	nir:guid "b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dbdc4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKENs"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dc142> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dc142>
+	rdfs:label "TB-52"^^xsd:string ;
+	nir:id "4052761"^^xsd:integer ;
+	nir:guid "b9e0ae2d-97c9-4657-8a46-0bf42052f044-003dc142"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKEGq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd4ab> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd4ab>
+	rdfs:label "GB-206"^^xsd:string ;
+	nir:id "4054853"^^xsd:integer ;
+	nir:guid "b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd4ab"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKEne"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd6ba> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd6ba>
+	rdfs:label "GB-217"^^xsd:string ;
+	nir:id "4054939"^^xsd:integer ;
+	nir:guid "b06f2a3f-dd7f-4790-8658-e07b6e384130-003dd6ba"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKEos"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003ddcba> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b06f2a3f-dd7f-4790-8658-e07b6e384130-003ddcba>
+	rdfs:label "GB-215"^^xsd:string ;
+	nir:id "4055003"^^xsd:integer ;
+	nir:guid "b06f2a3f-dd7f-4790-8658-e07b6e384130-003ddcba"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKEps"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dea4a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dea4a>
+	rdfs:label "GB-225"^^xsd:string ;
+	nir:id "4092709"^^xsd:integer ;
+	nir:guid "f318741b-5b32-4d59-9109-f686357ed5ce-003dea4a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKq08"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dec7b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dec7b>
+	rdfs:label "GB-226"^^xsd:string ;
+	nir:id "4092744"^^xsd:integer ;
+	nir:guid "f318741b-5b32-4d59-9109-f686357ed5ce-003dec7b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKq1b"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dee7e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/f318741b-5b32-4d59-9109-f686357ed5ce-003dee7e>
+	rdfs:label "GB-038"^^xsd:string ;
+	nir:id "4092751"^^xsd:integer ;
+	nir:guid "f318741b-5b32-4d59-9109-f686357ed5ce-003dee7e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKq1Y"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ca35a4b7-6c4a-47ca-ab00-966de55f4906-003defa8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ca35a4b7-6c4a-47ca-ab00-966de55f4906-003defa8>
+	rdfs:label "G12"^^xsd:string ;
+	nir:id "4092771"^^xsd:integer ;
+	nir:guid "ca35a4b7-6c4a-47ca-ab00-966de55f4906-003defa8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKq1E"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e779b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e779b>
+	rdfs:label "GB-108 2"^^xsd:string ;
+	nir:id "4101963"^^xsd:integer ;
+	nir:guid "19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e779b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwHc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e77ac> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e77ac>
+	rdfs:label "GB-106"^^xsd:string ;
+	nir:id "4101965"^^xsd:integer ;
+	nir:guid "19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e77ac"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwHW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e792d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e792d>
+	rdfs:label "G45"^^xsd:string ;
+	nir:id "4101986"^^xsd:integer ;
+	nir:guid "19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e792d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwHF"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e7acb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e7acb>
+	rdfs:label "G44"^^xsd:string ;
+	nir:id "4101991"^^xsd:integer ;
+	nir:guid "19d41534-0809-45dd-a7e4-ecc6f4e9de6e-003e7acb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwHA"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003e97d4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003e97d4>
+	rdfs:label "TB-11"^^xsd:string ;
+	nir:id "4102223"^^xsd:integer ;
+	nir:guid "abb722fe-85ab-4b64-89eb-4dd066d86946-003e97d4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwjY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003e9801> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003e9801>
+	rdfs:label "T-12"^^xsd:string ;
+	nir:id "4102225"^^xsd:integer ;
+	nir:guid "abb722fe-85ab-4b64-89eb-4dd066d86946-003e9801"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKwjy"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003ea1c2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003ea1c2>
+	rdfs:label "GB-303"^^xsd:string ;
+	nir:id "4104642"^^xsd:integer ;
+	nir:guid "abb722fe-85ab-4b64-89eb-4dd066d86946-003ea1c2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKvBl"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003ea20d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/abb722fe-85ab-4b64-89eb-4dd066d86946-003ea20d>
+	rdfs:label "GB-024"^^xsd:string ;
+	nir:id "4104717"^^xsd:integer ;
+	nir:guid "abb722fe-85ab-4b64-89eb-4dd066d86946-003ea20d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKv4W"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/b37e8140-5cb9-44bc-a770-0c4bbbbf5e96-003ea664> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/b37e8140-5cb9-44bc-a770-0c4bbbbf5e96-003ea664>
+	rdfs:label "GB-021_B"^^xsd:string ;
+	nir:id "4105828"^^xsd:integer ;
+	nir:guid "b37e8140-5cb9-44bc-a770-0c4bbbbf5e96-003ea664"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKvL9"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed0e4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed0e4>
+	rdfs:label "GB-021_C"^^xsd:string ;
+	nir:id "4117072"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ed0e4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_5z"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed42b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed42b>
+	rdfs:label "GB-107"^^xsd:string ;
+	nir:id "4117547"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ed42b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_S6"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed7ca> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ed7ca>
+	rdfs:label "GB-227"^^xsd:string ;
+	nir:id "4118474"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ed7ca"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_Jd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edab4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edab4>
+	rdfs:label "GB-105"^^xsd:string ;
+	nir:id "4119220"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003edab4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_cP"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ede10> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ede10>
+	rdfs:label "TB-15"^^xsd:string ;
+	nir:id "4120080"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ede10"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_qz"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ede35> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ede35>
+	rdfs:label "T-95"^^xsd:string ;
+	nir:id "4120117"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ede35"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_qO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edeec> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edeec>
+	rdfs:label "TB-14"^^xsd:string ;
+	nir:id "4120300"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003edeec"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_t1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edfcc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edfcc>
+	rdfs:label "GB-207"^^xsd:string ;
+	nir:id "4120524"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003edfcc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_pX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edfee> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003edfee>
+	rdfs:label "GB-022_B"^^xsd:string ;
+	nir:id "4120558"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003edfee"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OK_p3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ee330> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/66d4927a-8a07-4923-962e-2388c162587d-003ee330>
+	rdfs:label "GB-019"^^xsd:string ;
+	nir:id "4121392"^^xsd:integer ;
+	nir:guid "66d4927a-8a07-4923-962e-2388c162587d-003ee330"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKz0T"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd5ae> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd5ae>
+	rdfs:label "K105"^^xsd:string ;
+	nir:id "4183470"^^xsd:integer ;
+	nir:guid "85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd5ae"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKkQ3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd796> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd796>
+	rdfs:label "T010"^^xsd:string ;
+	nir:id "4183958"^^xsd:integer ;
+	nir:guid "85d382ed-ea38-4dd5-9f8b-af7397a92884-003fd796"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKkIx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fdaf2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/85d382ed-ea38-4dd5-9f8b-af7397a92884-003fdaf2>
+	rdfs:label "V40"^^xsd:string ;
+	nir:id "4184818"^^xsd:integer ;
+	nir:guid "85d382ed-ea38-4dd5-9f8b-af7397a92884-003fdaf2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OKkdV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ee59d146-b3e8-4cab-b02a-6c0fc86cd0fa-003febfd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ee59d146-b3e8-4cab-b02a-6c0fc86cd0fa-003febfd>
+	rdfs:label "GB-032_B"^^xsd:string ;
+	nir:id "4199218"^^xsd:integer ;
+	nir:guid "ee59d146-b3e8-4cab-b02a-6c0fc86cd0fa-003febfd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBI0V"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/stacked_walls/fcb65171-f626-43ab-932f-244a9244e6cd-004035b8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/stacked_walls/fcb65171-f626-43ab-932f-244a9244e6cd-004035b8>
+	rdfs:label "STACKED - V83"^^xsd:string ;
+	nir:id "4208346"^^xsd:integer ;
+	nir:guid "fcb65171-f626-43ab-932f-244a9244e6cd-004035b8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBGNt"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fcb65171-f626-43ab-932f-244a9244e6cd-00403644> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fcb65171-f626-43ab-932f-244a9244e6cd-00403644>
+	rdfs:label "V83"^^xsd:string ;
+	nir:id "4208348"^^xsd:integer ;
+	nir:guid "fcb65171-f626-43ab-932f-244a9244e6cd-00403644"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBGNn"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/stacked_walls/fcb65171-f626-43ab-932f-244a9244e6cd-0040379f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/stacked_walls/fcb65171-f626-43ab-932f-244a9244e6cd-0040379f>
+	rdfs:label "STACKED - V82"^^xsd:string ;
+	nir:id "4208543"^^xsd:integer ;
+	nir:guid "fcb65171-f626-43ab-932f-244a9244e6cd-0040379f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBGIo"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/stacked_walls/89bde75a-82eb-48a5-a8f8-e130f564c2b6-004038f4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/stacked_walls/89bde75a-82eb-48a5-a8f8-e130f564c2b6-004038f4>
+	rdfs:label "STACKED - K102"^^xsd:string ;
+	nir:id "4208884"^^xsd:integer ;
+	nir:guid "89bde75a-82eb-48a5-a8f8-e130f564c2b6-004038f4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBGlP"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6ea36fd7-c143-4e41-8264-8b814e409e2f-00405d66> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6ea36fd7-c143-4e41-8264-8b814e409e2f-00405d66>
+	rdfs:label "K106"^^xsd:string ;
+	nir:id "4218214"^^xsd:integer ;
+	nir:guid "6ea36fd7-c143-4e41-8264-8b814e409e2f-00405d66"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBMvB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/daeb752b-5fb5-46a7-ade2-74b90344501a-004066e6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/daeb752b-5fb5-46a7-ade2-74b90344501a-004066e6>
+	rdfs:label "V42"^^xsd:string ;
+	nir:id "4238616"^^xsd:integer ;
+	nir:guid "daeb752b-5fb5-46a7-ade2-74b90344501a-004066e6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBPur"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/58364dca-6592-41fc-9f7c-a596e99c9337-0040dc54> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/58364dca-6592-41fc-9f7c-a596e99c9337-0040dc54>
+	rdfs:label "V36"^^xsd:string ;
+	nir:id "4256645"^^xsd:integer ;
+	nir:guid "58364dca-6592-41fc-9f7c-a596e99c9337-0040dc54"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBS2e"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a34ec127-43d8-41e5-b590-51daa029e194-0040ef34> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a34ec127-43d8-41e5-b590-51daa029e194-0040ef34>
+	rdfs:label "YB12_Gips"^^xsd:string ;
+	nir:id "4257880"^^xsd:integer ;
+	nir:guid "a34ec127-43d8-41e5-b590-51daa029e194-0040ef34"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OBSjr"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/86cc68e3-4afe-4b02-81a4-2be43e981649-004100d8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/86cc68e3-4afe-4b02-81a4-2be43e981649-004100d8>
+	rdfs:label "YB14_Multipor"^^xsd:string ;
+	nir:id "4260056"^^xsd:integer ;
+	nir:guid "86cc68e3-4afe-4b02-81a4-2be43e981649-004100d8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB3Fr"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6daf2918-c361-461a-8ca9-3bc176d61ee9-00410763> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6daf2918-c361-461a-8ca9-3bc176d61ee9-00410763>
+	rdfs:label "V35"^^xsd:string ;
+	nir:id "4261731"^^xsd:integer ;
+	nir:guid "6daf2918-c361-461a-8ca9-3bc176d61ee9-00410763"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB3HE"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410a49> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410a49>
+	rdfs:label "V59"^^xsd:string ;
+	nir:id "4262473"^^xsd:integer ;
+	nir:guid "e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410a49"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB3ba"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410e91> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410e91>
+	rdfs:label "V81"^^xsd:string ;
+	nir:id "4263569"^^xsd:integer ;
+	nir:guid "e9fad96b-6e26-4d89-979f-70c0d7bddf73-00410e91"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB3sy"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/34a3fd15-9def-476c-8a0e-67701adc6c18-0040f8a3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/34a3fd15-9def-476c-8a0e-67701adc6c18-0040f8a3>
+	rdfs:label "3.A.3 Glass"^^xsd:string ;
+	nir:id "4266169"^^xsd:integer ;
+	nir:guid "34a3fd15-9def-476c-8a0e-67701adc6c18-0040f8a3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB2kK"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/34a3fd15-9def-476c-8a0e-67701adc6c18-0040ffa3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/34a3fd15-9def-476c-8a0e-67701adc6c18-0040ffa3>
+	rdfs:label "3.D.1 Glass"^^xsd:string ;
+	nir:id "4266181"^^xsd:integer ;
+	nir:guid "34a3fd15-9def-476c-8a0e-67701adc6c18-0040ffa3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OB2le"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/437fcec7-ff26-4eb5-9649-08cc34993a8d-004123e4> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/437fcec7-ff26-4eb5-9649-08cc34993a8d-004123e4>
+	rdfs:label "K204"^^xsd:string ;
+	nir:id "4388052"^^xsd:integer ;
+	nir:guid "437fcec7-ff26-4eb5-9649-08cc34993a8d-004123e4"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OByVv"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c8ebac54-73fd-4436-8040-d4c3e0c45b43-0041394f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c8ebac54-73fd-4436-8040-d4c3e0c45b43-0041394f>
+	rdfs:label "YM12"^^xsd:string ;
+	nir:id "4388144"^^xsd:integer ;
+	nir:guid "c8ebac54-73fd-4436-8040-d4c3e0c45b43-0041394f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OByOT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c8ebac54-73fd-4436-8040-d4c3e0c45b43-004139a8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c8ebac54-73fd-4436-8040-d4c3e0c45b43-004139a8>
+	rdfs:label "YM01"^^xsd:string ;
+	nir:id "4388146"^^xsd:integer ;
+	nir:guid "c8ebac54-73fd-4436-8040-d4c3e0c45b43-004139a8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OByOV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/de39c7c7-f426-471f-92ff-af8919c994f8-00442adc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/de39c7c7-f426-471f-92ff-af8919c994f8-00442adc>
+	rdfs:label "K104_Gips"^^xsd:string ;
+	nir:id "4468973"^^xsd:integer ;
+	nir:guid "de39c7c7-f426-471f-92ff-af8919c994f8-00442adc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OAGF0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/caaad4fa-d565-4649-9e1f-4b66dfe0f82a-0044368f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/caaad4fa-d565-4649-9e1f-4b66dfe0f82a-0044368f>
+	rdfs:label "K105_T-05"^^xsd:string ;
+	nir:id "4547085"^^xsd:integer ;
+	nir:guid "caaad4fa-d565-4649-9e1f-4b66dfe0f82a-0044368f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OA54W"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ad1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ad1>
+	rdfs:label "FAC CLAD-U2"^^xsd:string ;
+	nir:id "4777512"^^xsd:integer ;
+	nir:guid "13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ad1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O9TK5"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ea3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ea3>
+	rdfs:label "FAC 3.C.2"^^xsd:string ;
+	nir:id "4777516"^^xsd:integer ;
+	nir:guid "13377fb6-c3a1-478d-814d-6ce9892edf6c-00486ea3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O9TK1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c7c2d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c7c2d>
+	rdfs:label "FAC 3.C.5 panel"^^xsd:string ;
+	nir:id "5013206"^^xsd:integer ;
+	nir:guid "debe9544-66b7-4537-8e46-389cc86836dc-004c7c2d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8Ktx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c7c62> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c7c62>
+	rdfs:label "FAC 3.C.5"^^xsd:string ;
+	nir:id "5013208"^^xsd:integer ;
+	nir:guid "debe9544-66b7-4537-8e46-389cc86836dc-004c7c62"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8Ktr"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c815e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/debe9544-66b7-4537-8e46-389cc86836dc-004c815e>
+	rdfs:label "FAC 3.C.1 panel"^^xsd:string ;
+	nir:id "5013854"^^xsd:integer ;
+	nir:guid "debe9544-66b7-4537-8e46-389cc86836dc-004c815e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8R9p"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/3ad949ca-0ccf-464c-9b90-3492f6cc6d31-004cc65a> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/3ad949ca-0ccf-464c-9b90-3492f6cc6d31-004cc65a>
+	rdfs:label "FAC 3.A.6"^^xsd:string ;
+	nir:id "5031514"^^xsd:integer ;
+	nir:guid "3ad949ca-0ccf-464c-9b90-3492f6cc6d31-004cc65a"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8VLt"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fd1db7cd-4c63-4bbd-9291-29473b36fb14-004cc9b6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fd1db7cd-4c63-4bbd-9291-29473b36fb14-004cc9b6>
+	rdfs:label "4.D"^^xsd:string ;
+	nir:id "5032374"^^xsd:integer ;
+	nir:guid "fd1db7cd-4c63-4bbd-9291-29473b36fb14-004cc9b6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8VgR"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fd1db7cd-4c63-4bbd-9291-29473b36fb14-004ccd1c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fd1db7cd-4c63-4bbd-9291-29473b36fb14-004ccd1c>
+	rdfs:label "FAC 4.D panel"^^xsd:string ;
+	nir:id "5033244"^^xsd:integer ;
+	nir:guid "fd1db7cd-4c63-4bbd-9291-29473b36fb14-004ccd1c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8Vun"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/5013ca2d-bc51-46f1-8ebc-9943f777b02c-004c7b1d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/5013ca2d-bc51-46f1-8ebc-9943f777b02c-004c7b1d>
+	rdfs:label "GB-031_C"^^xsd:string ;
+	nir:id "5039966"^^xsd:integer ;
+	nir:guid "5013ca2d-bc51-46f1-8ebc-9943f777b02c-004c7b1d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8THp"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bfb7b6b5-69d0-4e58-911d-95bed5d6bb21-004d0cc8> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bfb7b6b5-69d0-4e58-911d-95bed5d6bb21-004d0cc8>
+	rdfs:label "FAC UB01.07"^^xsd:string ;
+	nir:id "5068209"^^xsd:integer ;
+	nir:guid "bfb7b6b5-69d0-4e58-911d-95bed5d6bb21-004d0cc8"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O86QS"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e4938> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e4938>
+	rdfs:label "Som G13"^^xsd:string ;
+	nir:id "5140357"^^xsd:integer ;
+	nir:guid "ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e4938"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8roe"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e5327> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e5327>
+	rdfs:label "Som V41"^^xsd:string ;
+	nir:id "5140603"^^xsd:integer ;
+	nir:guid "ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e5327"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8qDM"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e612d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e612d>
+	rdfs:label "Som-V41"^^xsd:string ;
+	nir:id "5140687"^^xsd:integer ;
+	nir:guid "ad9b0e7f-380a-4a89-b68d-78dea718aab7-004e612d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8qFY"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e7104> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e7104>
+	rdfs:label "G.8"^^xsd:string ;
+	nir:id "5145763"^^xsd:integer ;
+	nir:guid "7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e7104"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8xUE"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e74fd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e74fd>
+	rdfs:label "G.3"^^xsd:string ;
+	nir:id "5145815"^^xsd:integer ;
+	nir:guid "7f9e16bc-0fab-45b1-8a35-6e6dfaa693ed-004e74fd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8xVw"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4f8dd5ce-75a7-4dbe-b0d4-af7938436a70-004eb2a7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4f8dd5ce-75a7-4dbe-b0d4-af7938436a70-004eb2a7>
+	rdfs:label "2.C.3"^^xsd:string ;
+	nir:id "5157543"^^xsd:integer ;
+	nir:guid "4f8dd5ce-75a7-4dbe-b0d4-af7938436a70-004eb2a7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8u6A"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2e241894-1dcd-48a9-9f16-6ab8f53eef6e-004e86c0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2e241894-1dcd-48a9-9f16-6ab8f53eef6e-004e86c0>
+	rdfs:label "G1.3"^^xsd:string ;
+	nir:id "5169886"^^xsd:integer ;
+	nir:guid "2e241894-1dcd-48a9-9f16-6ab8f53eef6e-004e86c0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8z7p"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/13698f5d-4c2a-4faa-958b-005121b2f64f-004f2dbd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/13698f5d-4c2a-4faa-958b-005121b2f64f-004f2dbd>
+	rdfs:label "2D1_EXH 1 display"^^xsd:string ;
+	nir:id "5196566"^^xsd:integer ;
+	nir:guid "13698f5d-4c2a-4faa-958b-005121b2f64f-004f2dbd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8dWx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/cae4b5f0-808a-43c1-8b51-c5537dcbd8cd-004fbd72> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/cae4b5f0-808a-43c1-8b51-c5537dcbd8cd-004fbd72>
+	rdfs:label "G2 bis"^^xsd:string ;
+	nir:id "5225842"^^xsd:integer ;
+	nir:guid "cae4b5f0-808a-43c1-8b51-c5537dcbd8cd-004fbd72"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O8evV"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/62ee4752-ebfa-42d7-8c2f-9581efddafb0-0050db50> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/62ee4752-ebfa-42d7-8c2f-9581efddafb0-0050db50>
+	rdfs:label "V69"^^xsd:string ;
+	nir:id "5308849"^^xsd:integer ;
+	nir:guid "62ee4752-ebfa-42d7-8c2f-9581efddafb0-0050db50"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF3AS"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/f5c8d1c6-ec32-4847-8463-6ae342b6f6f7-00510a80> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/f5c8d1c6-ec32-4847-8463-6ae342b6f6f7-00510a80>
+	rdfs:label "TB35"^^xsd:string ;
+	nir:id "5320786"^^xsd:integer ;
+	nir:guid "f5c8d1c6-ec32-4847-8463-6ae342b6f6f7-00510a80"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF0D$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2c37474b-a40b-4539-b275-92ec8aaba0c5-0050e928> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2c37474b-a40b-4539-b275-92ec8aaba0c5-0050e928>
+	rdfs:label "3.B.4"^^xsd:string ;
+	nir:id "5327363"^^xsd:integer ;
+	nir:guid "2c37474b-a40b-4539-b275-92ec8aaba0c5-0050e928"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF7ak"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2c37474b-a40b-4539-b275-92ec8aaba0c5-0050f252> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2c37474b-a40b-4539-b275-92ec8aaba0c5-0050f252>
+	rdfs:label "Type 3B4"^^xsd:string ;
+	nir:id "5327413"^^xsd:integer ;
+	nir:guid "2c37474b-a40b-4539-b275-92ec8aaba0c5-0050f252"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF7aO"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/15e52428-8a11-41d4-adc4-6b31423b7796-00514b96> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/15e52428-8a11-41d4-adc4-6b31423b7796-00514b96>
+	rdfs:label "ALU CLADDING"^^xsd:string ;
+	nir:id "5331072"^^xsd:integer ;
+	nir:guid "15e52428-8a11-41d4-adc4-6b31423b7796-00514b96"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF6kj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/15e52428-8a11-41d4-adc4-6b31423b7796-005165e1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/15e52428-8a11-41d4-adc4-6b31423b7796-005165e1>
+	rdfs:label "T.1.1"^^xsd:string ;
+	nir:id "5334497"^^xsd:integer ;
+	nir:guid "15e52428-8a11-41d4-adc4-6b31423b7796-005165e1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OF5RC"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/17f23747-639e-403a-aaea-253f864064e4-00518a2c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/17f23747-639e-403a-aaea-253f864064e4-00518a2c>
+	rdfs:label "T-80"^^xsd:string ;
+	nir:id "5343788"^^xsd:integer ;
+	nir:guid "17f23747-639e-403a-aaea-253f864064e4-00518a2c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OFBa1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/17f23747-639e-403a-aaea-253f864064e4-00518a7e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/17f23747-639e-403a-aaea-253f864064e4-00518a7e>
+	rdfs:label "4.C.3"^^xsd:string ;
+	nir:id "5343870"^^xsd:integer ;
+	nir:guid "17f23747-639e-403a-aaea-253f864064e4-00518a7e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OFBbJ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-00526280> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-00526280>
+	rdfs:label "T-40"^^xsd:string ;
+	nir:id "5565959"^^xsd:integer ;
+	nir:guid "7429c7bd-6224-4da2-9e32-53e28f885b38-00526280"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OETqg"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262a1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262a1>
+	rdfs:label "T-41"^^xsd:string ;
+	nir:id "5565961"^^xsd:integer ;
+	nir:guid "7429c7bd-6224-4da2-9e32-53e28f885b38-005262a1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OETqa"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262bc> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262bc>
+	rdfs:label "T-45"^^xsd:string ;
+	nir:id "5565963"^^xsd:integer ;
+	nir:guid "7429c7bd-6224-4da2-9e32-53e28f885b38-005262bc"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OETqc"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262ef> a owl:Class .
+<http://web-bim/projects/BLOX/arch/roofs/7429c7bd-6224-4da2-9e32-53e28f885b38-005262ef>
+	rdfs:label "T-46"^^xsd:string ;
+	nir:id "5565965"^^xsd:integer ;
+	nir:guid "7429c7bd-6224-4da2-9e32-53e28f885b38-005262ef"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OETqW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/7429c7bd-6224-4da2-9e32-53e28f885b38-00528072> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/7429c7bd-6224-4da2-9e32-53e28f885b38-00528072>
+	rdfs:label "TB-42"^^xsd:string ;
+	nir:id "5566589"^^xsd:integer ;
+	nir:guid "7429c7bd-6224-4da2-9e32-53e28f885b38-00528072"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OESDG"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/8bda14a3-eba1-44e5-84e3-05e71ac99451-0053e4fa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/8bda14a3-eba1-44e5-84e3-05e71ac99451-0053e4fa>
+	rdfs:label "GB-021_D"^^xsd:string ;
+	nir:id "5589522"^^xsd:integer ;
+	nir:guid "8bda14a3-eba1-44e5-84e3-05e71ac99451-0053e4fa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OE7a$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/2556ff7f-0e51-4990-9daa-d3d8c67a9e54-00560b7b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/2556ff7f-0e51-4990-9daa-d3d8c67a9e54-00560b7b>
+	rdfs:label "K301_119mm"^^xsd:string ;
+	nir:id "5668186"^^xsd:integer ;
+	nir:guid "2556ff7f-0e51-4990-9daa-d3d8c67a9e54-00560b7b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OEqvt"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/10176633-50f4-4eac-ba5b-afecfd1fd3aa-0056ac60> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/10176633-50f4-4eac-ba5b-afecfd1fd3aa-0056ac60>
+	rdfs:label "GB-032_C"^^xsd:string ;
+	nir:id "5713066"^^xsd:integer ;
+	nir:guid "10176633-50f4-4eac-ba5b-afecfd1fd3aa-0056ac60"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OEX_7"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/4aa16e75-8a3d-4ec7-b02c-9fa431787f93-0059328e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/4aa16e75-8a3d-4ec7-b02c-9fa431787f93-0059328e>
+	rdfs:label "T-60/61"^^xsd:string ;
+	nir:id "5868920"^^xsd:integer ;
+	nir:guid "4aa16e75-8a3d-4ec7-b02c-9fa431787f93-0059328e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_ODBvL"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/86448d22-b763-4c7b-96f2-fbf0077cf86d-005c304d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/86448d22-b763-4c7b-96f2-fbf0077cf86d-005c304d>
+	rdfs:label "K201 (340MM)"^^xsd:string ;
+	nir:id "6042012"^^xsd:integer ;
+	nir:guid "86448d22-b763-4c7b-96f2-fbf0077cf86d-005c304d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OCGAn"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/bad2672b-cb11-481c-bd1b-f162a0258f6c-005c7d78> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/bad2672b-cb11-481c-bd1b-f162a0258f6c-005c7d78>
+	rdfs:label "L34 Ceiling Bulkhead"^^xsd:string ;
+	nir:id "6061432"^^xsd:integer ;
+	nir:guid "bad2672b-cb11-481c-bd1b-f162a0258f6c-005c7d78"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OCKvL"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/07ac3108-de0e-49dd-af32-8d6635d48ce5-005cd184> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/07ac3108-de0e-49dd-af32-8d6635d48ce5-005cd184>
+	rdfs:label "K101_193mm"^^xsd:string ;
+	nir:id "6082948"^^xsd:integer ;
+	nir:guid "07ac3108-de0e-49dd-af32-8d6635d48ce5-005cd184"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OCUAf"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6eede368-ef48-4b05-af67-303acb7d351e-005d8c3e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6eede368-ef48-4b05-af67-303acb7d351e-005d8c3e>
+	rdfs:label "CL-UB16 Ceiling Bulkhead"^^xsd:string ;
+	nir:id "6130750"^^xsd:integer ;
+	nir:guid "6eede368-ef48-4b05-af67-303acb7d351e-005d8c3e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_OCByJ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ab356c8f-480e-40a5-8701-f8464bcdef4a-00633edd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ab356c8f-480e-40a5-8701-f8464bcdef4a-00633edd>
+	rdfs:label "V52"^^xsd:string ;
+	nir:id "6523030"^^xsd:integer ;
+	nir:guid "ab356c8f-480e-40a5-8701-f8464bcdef4a-00633edd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O3hkx"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/floors/d7dba2f7-4095-42b1-be6e-bccc833b5701-0068196c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/floors/d7dba2f7-4095-42b1-be6e-bccc833b5701-0068196c>
+	rdfs:label "Walkable Grille"^^xsd:string ;
+	nir:id "6824755"^^xsd:integer ;
+	nir:guid "d7dba2f7-4095-42b1-be6e-bccc833b5701-0068196c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O1H0U"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-007012b1> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-007012b1>
+	rdfs:label "2.A.1 2 GREEN"^^xsd:string ;
+	nir:id "7344817"^^xsd:integer ;
+	nir:guid "7b5e1f2c-da4e-4be2-96e1-f32496443e9a-007012b1"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7I6S"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701357> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701357>
+	rdfs:label "FAC 3.A.3 Green"^^xsd:string ;
+	nir:id "7344983"^^xsd:integer ;
+	nir:guid "7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701357"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7I1w"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-0070141e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-0070141e>
+	rdfs:label "3.A.3 Glass Green"^^xsd:string ;
+	nir:id "7345182"^^xsd:integer ;
+	nir:guid "7b5e1f2c-da4e-4be2-96e1-f32496443e9a-0070141e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7ISp"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701503> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701503>
+	rdfs:label "2.B Green"^^xsd:string ;
+	nir:id "7345411"^^xsd:integer ;
+	nir:guid "7b5e1f2c-da4e-4be2-96e1-f32496443e9a-00701503"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7IOk"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-0070198d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-0070198d>
+	rdfs:label "FAC 3.D.1 Green"^^xsd:string ;
+	nir:id "7346573"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-0070198d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7IgW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007019da> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007019da>
+	rdfs:label "3.D.1 Glass Green"^^xsd:string ;
+	nir:id "7346650"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007019da"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Iht"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701bac> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701bac>
+	rdfs:label "FAC 3.A.1 Green"^^xsd:string ;
+	nir:id "7347116"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701bac"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7IY1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701e52> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701e52>
+	rdfs:label "2.A.2 Green Trim"^^xsd:string ;
+	nir:id "7347794"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00701e52"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Ir$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00702055> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00702055>
+	rdfs:label "FAC 3.A.2 Green"^^xsd:string ;
+	nir:id "7348309"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-00702055"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7HDu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007020d7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007020d7>
+	rdfs:label "FAC 3.D.2 Green"^^xsd:string ;
+	nir:id "7348439"^^xsd:integer ;
+	nir:guid "c49c3bc0-8eec-4e53-aaa9-ce66bc96a401-007020d7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7HFw"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703d90> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703d90>
+	rdfs:label "FAC 3.C.5 panel Green"^^xsd:string ;
+	nir:id "7355792"^^xsd:integer ;
+	nir:guid "45172cbf-b7c5-4a84-a3f3-fc586463464f-00703d90"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Gwz"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703db0> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703db0>
+	rdfs:label "FAC 3.C.5 Green"^^xsd:string ;
+	nir:id "7355824"^^xsd:integer ;
+	nir:guid "45172cbf-b7c5-4a84-a3f3-fc586463464f-00703db0"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7GwT"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e2e> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e2e>
+	rdfs:label "FAC 3.C.2 Green"^^xsd:string ;
+	nir:id "7355950"^^xsd:integer ;
+	nir:guid "45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e2e"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Gq3"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e60> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e60>
+	rdfs:label "FAC 3.C.1 panel Green"^^xsd:string ;
+	nir:id "7356000"^^xsd:integer ;
+	nir:guid "45172cbf-b7c5-4a84-a3f3-fc586463464f-00703e60"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7GrD"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00705cb7> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/45172cbf-b7c5-4a84-a3f3-fc586463464f-00705cb7>
+	rdfs:label "2.B Frit"^^xsd:string ;
+	nir:id "7363767"^^xsd:integer ;
+	nir:guid "45172cbf-b7c5-4a84-a3f3-fc586463464f-00705cb7"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7M_Q"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710e52> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710e52>
+	rdfs:label "FAC 3.C.1 Green"^^xsd:string ;
+	nir:id "7409234"^^xsd:integer ;
+	nir:guid "6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710e52"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O73r$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710ffa> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710ffa>
+	rdfs:label "FAC 3.B.1 Green"^^xsd:string ;
+	nir:id "7409658"^^xsd:integer ;
+	nir:guid "6798cc4b-87dc-499e-a74f-7217a6b7e1da-00710ffa"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O73pN"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00711f84> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/6798cc4b-87dc-499e-a74f-7217a6b7e1da-00711f84>
+	rdfs:label "2.B Green/Clear"^^xsd:string ;
+	nir:id "7413636"^^xsd:integer ;
+	nir:guid "6798cc4b-87dc-499e-a74f-7217a6b7e1da-00711f84"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O72of"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/7caf0527-4867-41e2-b07f-47431e889287-007135ca> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/7caf0527-4867-41e2-b07f-47431e889287-007135ca>
+	rdfs:label "4.A.2 Green"^^xsd:string ;
+	nir:id "7419338"^^xsd:integer ;
+	nir:guid "7caf0527-4867-41e2-b07f-47431e889287-007135ca"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O70Rd"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca15> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca15>
+	rdfs:label "FAC 4.D panel Green"^^xsd:string ;
+	nir:id "7457301"^^xsd:integer ;
+	nir:guid "4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca15"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Fau"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca45> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca45>
+	rdfs:label "4.D Green"^^xsd:string ;
+	nir:id "7457349"^^xsd:integer ;
+	nir:guid "4a1e868d-05a5-4e87-a344-1d4abb92526c-0071ca45"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7Fbe"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/904cf5ff-997b-4fbf-9b4d-613bf174eab8-0073d34f> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/904cf5ff-997b-4fbf-9b4d-613bf174eab8-0073d34f>
+	rdfs:label "B 150mm"^^xsd:string ;
+	nir:id "7593036"^^xsd:integer ;
+	nir:guid "904cf5ff-997b-4fbf-9b4d-613bf174eab8-0073d34f"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O7kzX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/8987915b-c519-4196-9462-7ff4d4a393a0-007acc06> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/8987915b-c519-4196-9462-7ff4d4a393a0-007acc06>
+	rdfs:label "2.A.1-B GREEN"^^xsd:string ;
+	nir:id "8054912"^^xsd:integer ;
+	nir:guid "8987915b-c519-4196-9462-7ff4d4a393a0-007acc06"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5zkj"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/8033d3ce-26d7-4baf-b433-5ab93b028659-007af5f9> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/8033d3ce-26d7-4baf-b433-5ab93b028659-007af5f9>
+	rdfs:label "2.A.1 GREEN"^^xsd:string ;
+	nir:id "8076911"^^xsd:integer ;
+	nir:guid "8033d3ce-26d7-4baf-b433-5ab93b028659-007af5f9"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5Wr2"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/8033d3ce-26d7-4baf-b433-5ab93b028659-007afa51> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/8033d3ce-26d7-4baf-b433-5ab93b028659-007afa51>
+	rdfs:label "FAC 4.A.1 Green"^^xsd:string ;
+	nir:id "8076949"^^xsd:integer ;
+	nir:guid "8033d3ce-26d7-4baf-b433-5ab93b028659-007afa51"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5Wsu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/48892e76-d6e6-44bf-82c5-79069b5d828b-007b08d2> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/48892e76-d6e6-44bf-82c5-79069b5d828b-007b08d2>
+	rdfs:label "2.A.3"^^xsd:string ;
+	nir:id "8077149"^^xsd:integer ;
+	nir:guid "48892e76-d6e6-44bf-82c5-79069b5d828b-007b08d2"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5Wnm"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/48892e76-d6e6-44bf-82c5-79069b5d828b-007b09d5> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/48892e76-d6e6-44bf-82c5-79069b5d828b-007b09d5>
+	rdfs:label "4.A.1 B"^^xsd:string ;
+	nir:id "8077165"^^xsd:integer ;
+	nir:guid "48892e76-d6e6-44bf-82c5-79069b5d828b-007b09d5"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5Wn0"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7bac> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7bac>
+	rdfs:label "FAC 3.A.4 Green"^^xsd:string ;
+	nir:id "8092588"^^xsd:integer ;
+	nir:guid "82530a0b-38cb-47b8-ae5b-dcae11475177-007b7bac"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5aY1"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7ecd> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7ecd>
+	rdfs:label "1.B Green"^^xsd:string ;
+	nir:id "8093389"^^xsd:integer ;
+	nir:guid "82530a0b-38cb-47b8-ae5b-dcae11475177-007b7ecd"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5atW"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7f5b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/82530a0b-38cb-47b8-ae5b-dcae11475177-007b7f5b>
+	rdfs:label "1 GREEN"^^xsd:string ;
+	nir:id "8093531"^^xsd:integer ;
+	nir:guid "82530a0b-38cb-47b8-ae5b-dcae11475177-007b7f5b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5ans"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/cbd1fe32-6c2e-460f-a250-235142d0a3d6-007b818c> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/cbd1fe32-6c2e-460f-a250-235142d0a3d6-007b818c>
+	rdfs:label "FAC 3.A.3 B GREEN"^^xsd:string ;
+	nir:id "8094092"^^xsd:integer ;
+	nir:guid "cbd1fe32-6c2e-460f-a250-235142d0a3d6-007b818c"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5hAX"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/5da71352-1702-41f0-a0d8-2497fc4a5980-007b831d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/5da71352-1702-41f0-a0d8-2497fc4a5980-007b831d>
+	rdfs:label "3.A.3 B Glass Green"^^xsd:string ;
+	nir:id "8094493"^^xsd:integer ;
+	nir:guid "5da71352-1702-41f0-a0d8-2497fc4a5980-007b831d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5h0m"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ce60aa0a-7164-4d05-a2a5-b4296a202de0-007bc000> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ce60aa0a-7164-4d05-a2a5-b4296a202de0-007bc000>
+	rdfs:label "3.A.1 Green"^^xsd:string ;
+	nir:id "8123249"^^xsd:integer ;
+	nir:guid "ce60aa0a-7164-4d05-a2a5-b4296a202de0-007bc000"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5i1S"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/99665dce-25e8-49b6-a4dc-66588a556ea9-007bc389> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/99665dce-25e8-49b6-a4dc-66588a556ea9-007bc389>
+	rdfs:label "FAC 3.A.3 Green Door"^^xsd:string ;
+	nir:id "8123256"^^xsd:integer ;
+	nir:guid "99665dce-25e8-49b6-a4dc-66588a556ea9-007bc389"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5i1L"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/ea23c9ce-2fa6-42a2-b615-1126e7361a18-007bc9eb> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/ea23c9ce-2fa6-42a2-b615-1126e7361a18-007bc9eb>
+	rdfs:label "3.A.1"^^xsd:string ;
+	nir:id "8123351"^^xsd:integer ;
+	nir:guid "ea23c9ce-2fa6-42a2-b615-1126e7361a18-007bc9eb"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O5i3w"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d6b9c2dd-5a8f-488d-90d1-734e1831b23d-007c1fd3> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d6b9c2dd-5a8f-488d-90d1-734e1831b23d-007c1fd3>
+	rdfs:label "G.6"^^xsd:string ;
+	nir:id "8134611"^^xsd:integer ;
+	nir:guid "d6b9c2dd-5a8f-488d-90d1-734e1831b23d-007c1fd3"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4Ip_"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/d5f5275e-ff3e-468e-b8d4-40fd69d09cd9-007c3381> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/d5f5275e-ff3e-468e-b8d4-40fd69d09cd9-007c3381>
+	rdfs:label "G1.1.1_OFFICE"^^xsd:string ;
+	nir:id "8148178"^^xsd:integer ;
+	nir:guid "d5f5275e-ff3e-468e-b8d4-40fd69d09cd9-007c3381"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4MV$"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fdf32e48-431b-40eb-ab02-205b6e0fff53-007c3885> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fdf32e48-431b-40eb-ab02-205b6e0fff53-007c3885>
+	rdfs:label "G1.2.1_DAC"^^xsd:string ;
+	nir:id "8148279"^^xsd:integer ;
+	nir:guid "fdf32e48-431b-40eb-ab02-205b6e0fff53-007c3885"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4MOQ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/39f7aa02-7c6e-492c-a347-ab5b27cfcfc1-007c7b5d> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/39f7aa02-7c6e-492c-a347-ab5b27cfcfc1-007c7b5d>
+	rdfs:label "G.5"^^xsd:string ;
+	nir:id "8162566"^^xsd:integer ;
+	nir:guid "39f7aa02-7c6e-492c-a347-ab5b27cfcfc1-007c7b5d"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4Ruh"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/fecd6636-42e3-495b-a31a-fa2ea4276e2f-007cb324> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/fecd6636-42e3-495b-a31a-fa2ea4276e2f-007cb324>
+	rdfs:label "FAC 3.A.1 Green_scrren only"^^xsd:string ;
+	nir:id "8172324"^^xsd:integer ;
+	nir:guid "fecd6636-42e3-495b-a31a-fa2ea4276e2f-007cb324"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4O09"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc148> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc148>
+	rdfs:label "3.B.1"^^xsd:string ;
+	nir:id "8175944"^^xsd:integer ;
+	nir:guid "b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc148"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4V9b"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc4a6> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc4a6>
+	rdfs:label "2.D.3_L0"^^xsd:string ;
+	nir:id "8176806"^^xsd:integer ;
+	nir:guid "b7f38a04-f1d6-4f90-aa31-9dc5759456e3-007cc4a6"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4VUB"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/712a5178-0c60-4890-a08c-7fcb1623af31-007cc755> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/712a5178-0c60-4890-a08c-7fcb1623af31-007cc755>
+	rdfs:label "G.4"^^xsd:string ;
+	nir:id "8177493"^^xsd:integer ;
+	nir:guid "712a5178-0c60-4890-a08c-7fcb1623af31-007cc755"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4VHu"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/a60b996c-4e9a-4990-9b27-8ea5ffac1b58-007cd8be> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/a60b996c-4e9a-4990-9b27-8ea5ffac1b58-007cd8be>
+	rdfs:label "3.B.3"^^xsd:string ;
+	nir:id "8181950"^^xsd:integer ;
+	nir:guid "a60b996c-4e9a-4990-9b27-8ea5ffac1b58-007cd8be"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4UkJ"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/3ccbdc50-af8e-4569-8ea6-5d4a9e32b692-007cdc19> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/3ccbdc50-af8e-4569-8ea6-5d4a9e32b692-007cdc19>
+	rdfs:label "4.C.3_Screen"^^xsd:string ;
+	nir:id "8182809"^^xsd:integer ;
+	nir:guid "3ccbdc50-af8e-4569-8ea6-5d4a9e32b692-007cdc19"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4Uyq"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/c1c2e224-76fb-4e15-93f0-3253d6e33a66-007d049b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/c1c2e224-76fb-4e15-93f0-3253d6e33a66-007d049b>
+	rdfs:label "Pan Closing"^^xsd:string ;
+	nir:id "8193179"^^xsd:integer ;
+	nir:guid "c1c2e224-76fb-4e15-93f0-3253d6e33a66-007d049b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O43Us"^^xsd:string .
+<http://web-bim/projects/BLOX/arch/walls/4ff36518-4625-4715-8163-fd1444dc8beb-007fb99b> a owl:Class .
+<http://web-bim/projects/BLOX/arch/walls/4ff36518-4625-4715-8163-fd1444dc8beb-007fb99b>
+	rdfs:label "G.7"^^xsd:string ;
+	nir:id "8370587"^^xsd:integer ;
+	nir:guid "4ff36518-4625-4715-8163-fd1444dc8beb-007fb99b"^^xsd:string ;
+	nir:ifcguid "329Yz46$X5leWGuE_O4egs"^^xsd:string .

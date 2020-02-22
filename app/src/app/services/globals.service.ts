@@ -28,6 +28,14 @@ export class GlobalsService {
         const endpoint = localStorage.getItem('myEndpoint');
         const user = localStorage.getItem('myUser');
         const password = localStorage.getItem('myPW');
+
+        // If no settings, set default
+        if(!endpoint){
+            const settings = new TriplestoreSettings("http://localhost:3031/AEChackathon", "hackMaster", "Master");
+            this.saveTriplestoreSettings(settings);
+            return this.getTriplestoreSettings();
+        }
+
         return new TriplestoreSettings(endpoint, user, password);
     }
 

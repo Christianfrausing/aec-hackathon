@@ -1,0 +1,18 @@
+
+<mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
+
+
+<mat-accordion>
+
+    <!-- DXF IMPORT -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          DXF Upload
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <dxf-json-parser (parsedJSON)="onParseFinish($event)"></dxf-json-parser>
+
+    </mat-expansion-panel>
+</mat-accordion>
