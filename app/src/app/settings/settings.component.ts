@@ -20,4 +20,8 @@ export class SettingsComponent implements OnInit {
 
   }
 
+  saveSettings(){
+    this._g.saveTriplestoreSettings(this.settings);
+  }
+
 }

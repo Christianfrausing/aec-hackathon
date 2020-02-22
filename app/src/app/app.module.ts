@@ -14,6 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 
 
@@ -51,6 +52,7 @@ import { SettingsComponent } from './settings/settings.component';
     NgxFileDropModule,
     MatFormFieldModule,
     MatToolbarModule,
+    MatButtonModule,
     MatInputModule,
     MatListModule,
     MatExpansionModule
