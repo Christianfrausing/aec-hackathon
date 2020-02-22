@@ -13,6 +13,7 @@ export class AppComponent implements OnChanges{
   public endpoint;
   public scope;
   public project;
+  public passedJson
 
   ngOnChanges(){
     console.log(this.canvasElement.nativeElement);
@@ -37,6 +38,7 @@ export class AppComponent implements OnChanges{
   // (til Jonas)
   onParseFinish(ev){
     console.log(ev);
+    this.passedJson = ev;
     this.buildPaper();
   }
 

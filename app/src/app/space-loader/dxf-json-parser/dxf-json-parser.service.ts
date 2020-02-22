@@ -56,7 +56,7 @@ export class DXFJSONParserService {
                                         var area = Math.abs(path.area/1000000);
                                         area = Math.round(area * 100) / 100;    // Round to two decimal places
 
-                                        return {path, name, type, area, svg: path.pathData};
+                                        return {path, name, type, area, svg: path.pathData, vertices:item.vertices};
                                     });
 
             // NB! DER ER ET PROBLEM MED ARCS

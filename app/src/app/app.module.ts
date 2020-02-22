@@ -36,7 +36,7 @@ import { SettingsComponent } from './settings/settings.component';
   declarations: [
     AppComponent,
     DXFJSONParserComponent,
-    PathSelecterComponent,
+    PathSelecterComponent,  
     AssemblerMapperComponent,
     BuildingSelectorComponent,
     StoreySelectorComponent,
