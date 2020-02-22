@@ -1,0 +1,25 @@
+<div fxFlex="grow" fxLayout="column">
+
+    <mat-form-field fxFlex="grow">
+        <mat-label>Select super-type</mat-label>
+        <mat-select (selectionChange)="onSuperClassChange()" [(ngModel)]="selectedSuperClass">
+            <mat-option *ngFor="let item of superClasses" [value]="item.uri">
+                {{item.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <ul fxFlex="grow">
+        <li *ngFor="let item of classInstances">
+            {{item | json}}
+        </li>
+    </ul>
+
+    <div fxFlex="grow" *ngIf="selectedSuperClass" fxLayout="column">
+        <mat-form-field fxFlex="grow">
+            <input matInput placeholder="{{selectedSuperClass.name}} type name" [(ngModel)]="newClassInstanceName">
+        </mat-form-field>
+        <button fxFlex="grow" mat-stroked-button color="primary" (click)="addClass()">Add type</button>
+    </div>
+
+</div>

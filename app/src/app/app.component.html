@@ -1,5 +1,3 @@
-ng serve
-
 <mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
 
 <div class="container" fxLayout="row" fxLayoutGap="15px">
@@ -55,7 +53,7 @@ ng serve
                       </mat-panel-title>
                     </mat-expansion-panel-header>
               
-                    <app-storey-heights></app-storey-heights>
+                    <app-storey-heights [buildingURI]="selectedBuilding"></app-storey-heights>
   
                 </mat-expansion-panel>
 
@@ -63,23 +61,25 @@ ng serve
                 <mat-expansion-panel *ngIf="selectedBuilding">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
-                      <h4 class="label">4. Load DXF underlay</h4>
+                      <h4 class="label">4. Create Element Classes</h4>
                       </mat-panel-title>
                     </mat-expansion-panel-header>
-              
-                    <app-dxf-json-parser (parsedJSON)="onParseFinish($event)"></app-dxf-json-parser>
+
+                    <app-wall-types></app-wall-types>
   
                 </mat-expansion-panel>
 
                 <!-- WALLS -->
-                <mat-expansion-panel *ngIf="passedJson" [expanded]="passedJson">
+                <mat-expansion-panel>
                     <mat-expansion-panel-header>
                       <mat-panel-title>
-                      <h4 class="label">5. Generate walls</h4>
+                      <h4 class="label">5. BUILD THAT WALL!</h4>
                       </mat-panel-title>
                     </mat-expansion-panel-header>
+
+                    <app-dxf-json-parser (parsedJSON)="onParseFinish($event)"></app-dxf-json-parser>
               
-                    <app-wall-selector></app-wall-selector>
+                    <app-wall-selector (wallTypeChanged)="onWallTypeSelect($event)"></app-wall-selector>
   
                 </mat-expansion-panel>
 
@@ -87,7 +87,7 @@ ng serve
                 <mat-expansion-panel *ngIf="false">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
-                      <h4 class="label">5. Generate walls</h4>
+                      <h4 class="label">6. Assign assemblies</h4>
                       </mat-panel-title>
                     </mat-expansion-panel-header>
               
