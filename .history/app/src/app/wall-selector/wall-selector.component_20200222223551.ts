@@ -35,8 +35,7 @@ export class WallSelectorComponent implements OnInit {
   }
 
   onWallTypeChange(){
-    const classURI = this.selectedWallType.class.value;
-    this.wallTypeChanged.emit(classURI);
+    this.wallTypeChanged.emit(this.selectedWallType);
   }
 
 }

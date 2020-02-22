@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FusekiService } from '../services/fuseki.service';
 
 @Component({
@@ -10,8 +10,6 @@ export class WallSelectorComponent implements OnInit {
 
   public wallTypes;
   public selectedWallType;
-
-  @Output() wallTypeChanged = new EventEmitter<any>();
 
   constructor(
     private _fs: FusekiService
@@ -32,11 +30,6 @@ export class WallSelectorComponent implements OnInit {
       console.log(res);
       this.wallTypes = res;
     }, err => console.log(err));
-  }
-
-  onWallTypeChange(){
-    const classURI = this.selectedWallType.class.value;
-    this.wallTypeChanged.emit(classURI);
   }
 
 }
