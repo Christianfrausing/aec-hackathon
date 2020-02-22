@@ -67,7 +67,7 @@ export class PathSelecterComponent implements OnChanges {
     path3.strokeWidth = 15 
     this.arrayPath.push(path3)   
 
-    console.log(path3)
+    console.log(path3.length)
 
 
   }
@@ -127,11 +127,12 @@ pathDClickEvent(path)
         path.onMouseEnter = function(event) {self.pathEnterEvent(this)}
         path.onMouseLeave = function(event) {self.pathLeavekEvent(this)}
         path.onClick = function(event){self.pathDClickEvent(this)}
+        
 
     });
-
-    this.project.activeLayer.fitBounds(this.scope.view.bounds);
-    this.scope.view.zoom =0.95 
+   
+    console.log(this.project.activeLayer.fitBounds(this.scope.view.bounds))
+    this.scope.view.zoom =0.95
 
 }
 }
