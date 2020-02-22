@@ -59,44 +59,19 @@ ng serve
   
                 </mat-expansion-panel>
 
-                <!-- DXF -->
-                <mat-expansion-panel *ngIf="selectedBuilding">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                      <h4 class="label">4. Load DXF underlay</h4>
-                      </mat-panel-title>
-                    </mat-expansion-panel-header>
-              
-                    <app-dxf-json-parser (parsedJSON)="onParseFinish($event)"></app-dxf-json-parser>
-  
-                </mat-expansion-panel>
-
-                <!-- WALLS -->
-                <mat-expansion-panel *ngIf="passedJson" [expanded]="passedJson">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                      <h4 class="label">5. Generate walls</h4>
-                      </mat-panel-title>
-                    </mat-expansion-panel-header>
-              
-                    <app-wall-selector></app-wall-selector>
-  
-                </mat-expansion-panel>
-
-                <!-- ASSEMBLIES -->
-                <mat-expansion-panel *ngIf="false">
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                      <h4 class="label">5. Generate walls</h4>
-                      </mat-panel-title>
-                    </mat-expansion-panel-header>
-              
-                    <app-assembler-mapper></app-assembler-mapper>
-  
-                </mat-expansion-panel>
-
             </mat-accordion>
             
+            
+
+            <h4 class="label">4. Load spaces</h4>
+            <app-space-loader (parsedJSON)="onParseFinish($event)"></app-space-loader>
+
+            <h4 class="label">5. Generate walls</h4>
+            <app-storey-selector></app-storey-selector>
+
+            <h4 class="label">6. Map products</h4>
+            <app-assembler-mapper></app-assembler-mapper>
+
         </div>
     </div>
   
