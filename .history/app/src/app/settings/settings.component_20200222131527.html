@@ -1,0 +1,26 @@
+<mat-accordion>
+
+    <!-- DXF IMPORT -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          SETTINGS
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="SPARQL-endpoint*" [(ngModel)]="settings.endpoint">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Username" [(ngModel)]="settings.user">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Password" type="password" [(ngModel)]="settings.password">
+      </mat-form-field>
+
+      <app-dxf-json-parser (parsedJSON)="onParseFinish($event)"></app-dxf-json-parser>
+
+    </mat-expansion-panel>
+</mat-accordion>
