@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpaceLoaderComponent } from './space-loader.component';
+import { WallSelectorComponent } from './wall-selector.component';
 
-describe('SpaceLoaderComponent', () => {
-  let component: SpaceLoaderComponent;
-  let fixture: ComponentFixture<SpaceLoaderComponent>;
+describe('WallSelectorComponent', () => {
+  let component: WallSelectorComponent;
+  let fixture: ComponentFixture<WallSelectorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpaceLoaderComponent ]
+      declarations: [ WallSelectorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpaceLoaderComponent);
+    fixture = TestBed.createComponent(WallSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
