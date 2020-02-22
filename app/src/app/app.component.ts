@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'app';
+  public endpoint;
 
   // Emitted when DXF parser has data
   // (til Jonas)
   onParseFinish(ev){
     console.log(ev);
   }
-
 
 }
