@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // 3RD PARTY MODULES
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -37,6 +38,7 @@ import{ DXFJSONParserComponent } from './space-loader/dxf-json-parser/dxf-json-p
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     NgxFileDropModule,
     MatFormFieldModule,
     MatToolbarModule,
