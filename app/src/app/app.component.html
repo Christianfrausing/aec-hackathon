@@ -14,9 +14,7 @@ ng serve
                 <!-- ENDPOINT -->
                 <h3 mat-subheader>Select SPARQL endpoint</h3>
                 <mat-list-item>
-                    <mat-form-field class="full-width">
-                        <input matInput placeholder="SPARQL-endpoint" [(ngModel)]="endpoint">
-                    </mat-form-field>
+                    <app-settings></app-settings>
                 </mat-list-item>
             
                 <!-- SELECT BUILDING -->
@@ -61,6 +59,9 @@ ng serve
             
             <!-- HER KOMMER 2D-plan -->
             <p>Plan her</p>
+
+
+            <canvas #canvasElement width="595" height="842"></canvas>
 
             
         </div>

@@ -17,15 +17,19 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatExpansionModule} from '@angular/material/expansion';
 
 
+// APP SERVICES
+import { GlobalsService } from './services/globals.service';
+
 // APP COMPONENTS
 // Put your components here
-import{ DXFJSONParserComponent } from './space-loader/dxf-json-parser/dxf-json-parser.component';
+import { DXFJSONParserComponent } from './space-loader/dxf-json-parser/dxf-json-parser.component';
 import { PathSelecterComponent } from './path-selecter/path-selecter.component';
 
 import { AssemblerMapperComponent } from './assembler-mapper/assembler-mapper.component';
 import { BuildingSelectorComponent } from './building-selector/building-selector.component';
 import { StoreySelectorComponent } from './storey-selector/storey-selector.component';
 import { SpaceLoaderComponent } from './space-loader/space-loader.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 @NgModule({
@@ -36,7 +40,8 @@ import { SpaceLoaderComponent } from './space-loader/space-loader.component';
     AssemblerMapperComponent,
     BuildingSelectorComponent,
     StoreySelectorComponent,
-    SpaceLoaderComponent
+    SpaceLoaderComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,7 @@ import { SpaceLoaderComponent } from './space-loader/space-loader.component';
     MatListModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [GlobalsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
