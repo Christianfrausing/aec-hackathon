@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { DXFJSONParserService } from './dxf-json-parser.service';
 
 @Component({
-    selector: 'dxf-json-parser',
+    selector: 'app-dxf-json-parser',
     templateUrl: './dxf-json-parser.component.html',
     styleUrls: ['./dxf-json-parser.component.css'],
     providers: [DXFJSONParserService]
