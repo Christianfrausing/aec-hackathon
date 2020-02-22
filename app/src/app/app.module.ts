@@ -42,7 +42,7 @@ import { StoreyHeightsComponent } from './storey-heights/storey-heights.componen
   declarations: [
     AppComponent,
     DXFJSONParserComponent,
-    PathSelecterComponent,
+    PathSelecterComponent,  
     AssemblerMapperComponent,
     BuildingSelectorComponent,
     StoreySelectorComponent,
