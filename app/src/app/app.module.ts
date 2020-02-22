@@ -17,12 +17,14 @@ import {MatListModule} from '@angular/material/list';
 // APP COMPONENTS
 // Put your components here
 import{ DXFJSONParserComponent } from './dxf-json-parser/dxf-json-parser.component';
+import { PathSelecterComponent } from './path-selecter/path-selecter.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DXFJSONParserComponent
+    DXFJSONParserComponent,
+    PathSelecterComponent
   ],
   imports: [
     BrowserModule,
