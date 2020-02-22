@@ -1,0 +1,20 @@
+
+<div *ngIf="buildings && buildings.length" fxFlex="grow" fxLayout="column">
+    <mat-form-field fxFlex="90%">
+        <mat-label>Select building</mat-label>
+        <mat-select (selectionChange)="onBuildingSelectionChange()" [(ngModel)]="selectedBuilding">
+            <mat-option *ngFor="let item of buildings" [value]="item">
+                {{item.name.value}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+</div>
+
+<div fxFlex="grow" *ngIf="!buildings || !buildings.length" fxLayout="column">
+    <mat-form-field fxFlex="grow">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="New building" [(ngModel)]="newBuildingName">
+    </mat-form-field>
+    <button fxFlex="grow" mat-stroked-button color="primary" (click)="addBuilding()">Add building</button>
+</div>
