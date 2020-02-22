@@ -36,6 +36,7 @@ import { StoreySelectorComponent } from './storey-selector/storey-selector.compo
 import { SettingsComponent } from './settings/settings.component';
 import { StoreyHeightsComponent } from './storey-heights/storey-heights.component';
 import { WallSelectorComponent } from './wall-selector/wall-selector.component';
+import { WallTypesComponent } from './wall-types/wall-types.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { WallSelectorComponent } from './wall-selector/wall-selector.component';
     StoreySelectorComponent,
     SettingsComponent,
     StoreyHeightsComponent,
-    WallSelectorComponent
+    WallSelectorComponent,
+    WallTypesComponent
   ],
   imports: [
     BrowserModule,

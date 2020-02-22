@@ -1,0 +1,14 @@
+<mat-form-field fxFlex="grow">
+    <mat-label>Select super-type</mat-label>
+    <mat-select (selectionChange)="onSuperClassChange()" [(ngModel)]="selectedSuperClass">
+        <mat-option *ngFor="let item of superClasses" [value]="item.uri">
+            {{item.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<ul>
+    <li *ngFor="let item of classInstances">
+        {{item | json}}
+    </li>
+</ul>

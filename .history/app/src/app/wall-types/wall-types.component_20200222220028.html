@@ -1,0 +1,8 @@
+<mat-form-field fxFlex="90%">
+    <mat-label>Select super-type</mat-label>
+    <mat-select [(ngModel)]="selectedSuperClass">
+        <mat-option *ngFor="let item of superClasses" [value]="item.uri">
+            {{item.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
