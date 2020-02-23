@@ -1,0 +1,11 @@
+
+<mat-form-field *ngIf="!buildings || !buildings.length">
+    <mat-label>Select building</mat-label>
+    <mat-select>
+        <mat-option *ngFor="let item of buildings" [value]="item">
+            {{item.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<button fxFlex="grow" mat-stroked-button color="primary" (click)="addBuilding('cc')">Add building</button>

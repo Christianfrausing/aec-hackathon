@@ -1,0 +1,49 @@
+ng serve
+
+<mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
+
+<div class="container" fxLayout="row" fxLayoutGap="15px">
+
+    <!-- LEFT -->
+    <div fxFlex="50%" class="left">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane" style="padding: 10px">
+
+            <!-- INDHOLD I VENSTRE SIDE -->
+
+            <h4 class="label">Select SPARQL endpoint</h4>
+            <app-settings fxFlex="grow"></app-settings>
+        
+            <h4 class="label">1. Select building</h4>
+            <app-building-selector (onBuildingChange)="onBuildingSelect($event)"></app-building-selector>
+
+            <h4 class="label">2. Select storey</h4>
+            <app-storey-selector [buildingURI]="selectedBuilding" (onStoreyChange)="onStoreySelect($event)"></app-storey-selector>
+
+            <h4 class="label">3. Load spaces</h4>
+            <app-space-loader (parsedJSON)="onParseFinish($event)"></app-space-loader>
+
+            <h4 class="label">4. Generate walls</h4>
+            <app-storey-selector></app-storey-selector>
+
+            <h4 class="label">5. Map products</h4>
+            <app-assembler-mapper></app-assembler-mapper>
+
+        </div>
+    </div>
+  
+    <!-- RIGHT -->
+    <div fxFlex="50%" class="right">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane">
+
+            
+            <!-- HER KOMMER 2D-plan -->
+            <p>Plan her</p>
+
+
+            <canvas #canvasElement width="595" height="842"></canvas>
+
+            
+        </div>
+    </div>
+
+</div>

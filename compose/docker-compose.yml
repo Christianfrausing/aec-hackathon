@@ -120,24 +120,24 @@ services:
         networks:
             - shared-network
     aec-fuseki-2:
-        # command: >
-        #     sh -c
-        #     "
-        #     for db in /fuseki/dbs/*; do
-        #     file=$$(basename $$db);
-        #     name=$$(basename $${db%%.*});
-        #     if [ ! -d /fuseki/databases/_$$name ];
-        #     then
-        #         mkdir -p /fuseki/configuration
-        #         cp /fuseki/reasoning_config.ttl /fuseki/configuration/$$name.ttl
-        #         sed -i 's/<db>/'$$name'/g' /fuseki/configuration/$$name.ttl
-        #         mkdir -p /fuseki/databases/$$name
-        #         /jena-fuseki/tdbloader --loc=/fuseki/databases/_$$name /fuseki/dbs/$$file
-        #         cp -R /fuseki/databases/_$$name/* /fuseki/databases/$$name
-        #     fi;
-        #     done;
-        #     /jena-fuseki/fuseki-server
-        #     "
+        command: >
+            sh -c
+            "
+            for db in /fuseki/dbs/*; do
+            file=$$(basename $$db);
+            name=$$(basename $${db%%.*});
+            if [ ! -d /fuseki/databases/_$$name ];
+            then
+                mkdir -p /fuseki/configuration
+                cp /fuseki/reasoning_config.ttl /fuseki/configuration/$$name.ttl
+                sed -i 's/<db>/'$$name'/g' /fuseki/configuration/$$name.ttl
+                mkdir -p /fuseki/databases/$$name
+                /jena-fuseki/tdbloader --loc=/fuseki/databases/_$$name /fuseki/dbs/$$file
+                cp -R /fuseki/databases/_$$name/* /fuseki/databases/$$name
+            fi;
+            done;
+            /jena-fuseki/fuseki-server
+            "
         container_name: aec_fuseki_2
         image: stain/jena-fuseki
         restart: on-failure

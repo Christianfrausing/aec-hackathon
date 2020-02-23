@@ -1,0 +1,7 @@
+<div fxFlex="grow" fxLayout="column">
+
+    <mat-form-field *ngFor="let item of storeyHeights">
+        <input matInput placeholder="{{item.name.value}} height" [value]="item.height.value">
+    </mat-form-field>
+
+</div>

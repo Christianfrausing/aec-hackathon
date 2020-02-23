@@ -1,0 +1,118 @@
+ng serve
+
+<mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
+
+<div class="container" fxLayout="row" fxLayoutGap="15px">
+
+    <!-- LEFT -->
+    <div fxFlex="50%" class="left">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane" style="padding: 10px">
+
+            <!-- INDHOLD I VENSTRE SIDE -->
+            <mat-accordion>
+
+                <!-- SETTINGS -->
+                <mat-expansion-panel expanded="true">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    <h4 class="label">Select SPARQL endpoint</h4>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+            
+                  <app-settings fxFlex="grow"></app-settings>
+
+                </mat-expansion-panel>
+
+                <!-- BUILDING -->
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">1. Select building</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-building-selector (onBuildingChange)="onBuildingSelect($event)"></app-building-selector>
+  
+                </mat-expansion-panel>
+
+                <!-- STOREY -->
+                <mat-expansion-panel *ngIf="selectedBuilding">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">2. Select storey</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-storey-selector [buildingURI]="selectedBuilding" (onStoreyChange)="onStoreySelect($event)"></app-storey-selector>
+  
+                </mat-expansion-panel>
+
+                <!-- STOREY HEIGHTS -->
+                <mat-expansion-panel *ngIf="selectedBuilding">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">3. Specify storey heights</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-storey-heights></app-storey-heights>
+  
+                </mat-expansion-panel>
+
+                <!-- DXF -->
+                <mat-expansion-panel *ngIf="selectedBuilding">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">4. Load DXF underlay</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-space-loader (parsedJSON)="onParseFinish($event)"></app-space-loader>
+  
+                </mat-expansion-panel>
+
+                <!-- WALLS -->
+                <mat-expansion-panel *ngIf="passedJson" [expanded]="passedJson">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">5. Generate walls</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-wall-selector></app-wall-selector>
+  
+                </mat-expansion-panel>
+
+                <!-- ASSEMBLIES -->
+                <mat-expansion-panel *ngIf="false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                      <h4 class="label">5. Generate walls</h4>
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+              
+                    <app-assembler-mapper></app-assembler-mapper>
+  
+                </mat-expansion-panel>
+
+            </mat-accordion>
+            
+        </div>
+    </div>
+  
+    <!-- RIGHT -->
+    <div fxFlex="50%" class="right">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane">
+
+            
+            <!-- HER KOMMER 2D-plan -->
+            <app-path-selecter [jasonPassed] = "passedJson"> </app-path-selecter> 
+
+
+            
+
+            
+        </div>
+    </div>
+
+</div>

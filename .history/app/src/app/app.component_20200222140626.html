@@ -1,0 +1,80 @@
+ng serve
+
+<mat-toolbar style="margin-bottom: 10px">Loud Computer Artists</mat-toolbar>
+
+<div class="container" fxLayout="row" fxLayoutGap="15px">
+
+    <!-- LEFT -->
+    <div fxFlex="50%" class="left">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane" style="padding: 10px">
+
+            <!-- INDHOLD I VENSTRE SIDE -->
+
+            <!-- ENDPOINT -->
+            <h4 class="label">Select SPARQL endpoint</h4>
+            <app-settings fxFlex="grow"></app-settings>
+        
+            <!-- SELECT BUILDING -->
+            <h3 mat-subheader>1. Select building</h3>
+            <app-building-selector></app-building-selector>
+
+
+            <mat-list>
+
+                <!-- ENDPOINT -->
+                <h3 mat-subheader>Select SPARQL endpoint</h3>
+                <mat-list-item fxLayout="column">
+                    <app-settings fxFlex="grow"></app-settings>
+                </mat-list-item>
+            
+                <!-- SELECT BUILDING -->
+                <h3 mat-subheader>1. Select building</h3>
+                <mat-list-item>
+                    <app-building-selector></app-building-selector>
+                </mat-list-item>
+            
+                <!-- SELECT STOREY -->
+                <h3 mat-subheader>2. Select storey</h3>
+                <mat-list-item>
+                    <app-storey-selector></app-storey-selector>
+                </mat-list-item>
+            
+                <!-- LOAD SPACES -->
+                <h3 mat-subheader>3. Load spaces</h3>
+                <mat-list-item>
+                    <app-space-loader (parsedJSON)="onParseFinish($event)"></app-space-loader>
+                </mat-list-item>
+            
+                <!-- GENERATE WALLS -->
+                <h3 mat-subheader>4. Generate walls</h3>
+                <mat-list-item>
+            
+                </mat-list-item>
+            
+                <!-- MAP PRODUCTS -->
+                <h3 mat-subheader>5. Map products</h3>
+                <mat-list-item>
+                    <app-assembler-mapper></app-assembler-mapper>
+                </mat-list-item>
+            
+            </mat-list>
+
+        </div>
+    </div>
+  
+    <!-- RIGHT -->
+    <div fxFlex="50%" class="right">
+        <div fxLayout="column" fxLayoutAlign="start stretch" class="pane">
+
+            
+            <!-- HER KOMMER 2D-plan -->
+            <p>Plan her</p>
+
+
+            <canvas #canvasElement width="595" height="842"></canvas>
+
+            
+        </div>
+    </div>
+
+</div>

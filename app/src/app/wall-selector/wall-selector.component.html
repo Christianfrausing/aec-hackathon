@@ -1,0 +1,8 @@
+<mat-form-field fxFlex="grow" style="margin-top: 5px">
+    <mat-label>Select wall type</mat-label>
+    <mat-select (selectionChange)="onWallTypeChange()" [(ngModel)]="selectedWallType">
+        <mat-option *ngFor="let item of wallTypes" [value]="item">
+            {{item.name.value}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
