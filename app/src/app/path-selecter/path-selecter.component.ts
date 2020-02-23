@@ -41,9 +41,11 @@ export class PathSelecterComponent implements OnChanges {
 
   ngOnChanges(change: SimpleChanges) {
 
-    console.log(change)
-    if (change.storyPassed) {
+    
 
+    
+    if (change.storyPassed) {
+      this.loadPathFrom()
       console.log("story - " + this.storyPassed)
 
     }
@@ -63,6 +65,21 @@ export class PathSelecterComponent implements OnChanges {
     }
   }
 
+  loadPathFrom(){
+
+    if(!this.storyPassed) return;
+    const q = `
+      SELECT ?wall ?wallType ?wkt
+      WHERE {
+        <${this.storyPassed}> bot:adjacentElement ?wall .
+        ?wall a nir:Wall , ?wallType ;          
+          omg:hasGeometry ?geo .
+          ?geo fog:asSfa_V2-wkt ?wkt
+      }`;
+      this._fs.getQuery(q).subscribe(res => {
+        console.log(res);
+      }, err => console.log(err));
+  }
 
   pathEnterEvent(path) {
     path.strokeColor = 'red';
