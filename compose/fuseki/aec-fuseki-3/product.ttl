@@ -1,0 +1,34 @@
+prefix :    <http://empty-project.org#>
+prefix lca: <http://oekobaudat/lca-ontology#>
+prefix bpo: <https://w3id.org/bpo#>
+prefix owl: <http://www.w3.org/2002/07/owl>
+
+# Product 1
+:sandwichBrick a bpo:Product, bpo:Assembly ;
+    bpo:consistsOf <concrete> ;
+    bpo:consistsOf <insulation-mineral> ;
+    bpo:consistsOf <brick> .
+
+:concrete owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/68160437999> ;
+    bpo:hasThickness "100" .
+
+:insulationMineral owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/489067233007> ;
+    bpo:hasThickness "300" .
+
+:brick owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/828369649391> ;
+    bpo:hasThickness "108" .
+
+# Product 2
+:sandwichTree a bpo:Product, bpo:Assembly ;
+    bpo:consistsOf <clt> ;
+    bpo:consistsOf <insulation-paper> ;
+    bpo:consistsOf <tree-birch> .
+
+:clt owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/1317995921135> ;
+    bpo:hasThickness "100" .
+
+:insulationPaper owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/149764816623> ;
+    bpo:hasThickness "300" .
+
+:treeBirch owl:sameAs <http://www.oekobaudat.de/OEKOBAU.DAT/resource/stage/836959583983> ;
+    bpo:hasThickness "100" .
