@@ -150,8 +150,8 @@ services:
         volumes:
             - fuseki-volume-2:/fuseki
             - ./shiro.ini:/fuseki/shiro.ini
-            # - ./fuseki/aec-fuseki-2:/fuseki/dbs
-            # - ./fuseki/reasoning_config.ttl:/fuseki/reasoning_config.ttl
+            - ./fuseki/aec-fuseki-2:/fuseki/dbs
+            - ./fuseki/reasoning_config.ttl:/fuseki/reasoning_config.ttl
         networks:
             - shared-network
     aec-fuseki-3:
